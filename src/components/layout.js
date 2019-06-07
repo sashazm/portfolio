@@ -10,7 +10,10 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+// reset before applying your styles
+import "../sass/normalize.scss"
+import "../sass/styles.scss"
+
 
 const Layout = ({ children }) => (
   <StaticQuery
