@@ -1,0 +1,16 @@
+.site__container-featured-image {
+  grid-column: image;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-image {
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  background-image: url("../images/creativity-small.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
