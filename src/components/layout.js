@@ -27,11 +27,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       // <!-- Site Navigation Area Start-->
-      <div className="site__container">
+      <div className="site-container">
         <div className="sidebar">
           <section className="sidebar__nav" tabindex="0">
             {/* <!-- Header Area Start--> */}
-            <div className="site__info">
+            <div>
               <h1 className="sidebar__nav-title">Sashas Portfolio</h1>
               <p className="sidebar__nav-description">
                 I'm a multilingual, based in Sacramento area.
@@ -40,9 +40,9 @@ const Layout = ({ children }) => (
 
             {/* <!-- Menu Links Start --> */}
             <nav>
-              <ul className="menu menu--active">
+              <ul className="menu u-centered menu--active">
                 <li className="menu__item">
-                  <a href="index.html" className="current menu__link">
+                  <a href="index.html" className="current menu__link nav-link">
                     Home
                   </a>
                   <div className="wave-container">
@@ -52,7 +52,7 @@ const Layout = ({ children }) => (
                   </div>
                 </li>
                 <li className="menu__item">
-                  <a href="about.html" className="menu__link">
+                  <a href="about.html" className="menu__link nav-link">
                     About
                   </a>
                   <div className="wave-container">
@@ -62,14 +62,24 @@ const Layout = ({ children }) => (
                   </div>
                 </li>
                 <li className="menu__item">
-                  <a href="scroll.html" className="menu__link">
+                  <a href="scroll.html" className="menu__link nav-link">
                     Hobbies
                   </a>
+                  <div className="wave-container">
+                    <div className="wave"></div>
+                    <div className="wave wave--second"></div>
+                    <div className="wave wave--third"></div>
+                  </div>
                 </li>
                 <li className="menu__item">
-                  <a href="contact.html" className="menu__link">
+                  <a href="contact.html" className="menu__link nav-link">
                     Resume
                   </a>
+                  <div className="wave-container">
+                    <div className="wave"></div>
+                    <div className="wave wave--second"></div>
+                    <div className="wave wave--third"></div>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -84,25 +94,25 @@ const Layout = ({ children }) => (
             {/* <!-- Social Media Links --> */}
             {/* <!-- Menu Toggle --> */}
             <div className="nav-toggle">
-              <div className="nav-toggle__icon nav-icon">1</div>
+              <div className="nav-toggle__icon nav-link nav-icon">1</div>
             </div>
-            <a href="#" className="nav-icon email">
+            <a href="#" className="nav-icon nav-link email">
               <i className="fas fa-at"></i>2
             </a>
-            <a href="#" className="nav-icon github">
+            <a href="#" className="nav-icon nav-link github">
               <i className="fab fa-github"></i>3
             </a>
-            <a href="#" className="nav-icon drupal">
+            <a href="#" className="nav-icon nav-link drupal">
               <i className="fab fa-drupal"></i>4
             </a>
-            <a href="#" className="nav-icon codepen">
+            <a href="#" className="nav-icon nav-link codepen">
               <i className="fab fa-codepen"></i>5
             </a>
-            <a href="#" className="nav-icon codecamp">
+            <a href="#" className="nav-icon nav-link codecamp">
               <i className="fa fa-free-code-camp"></i>6
             </a>
           </section>
-        </div>{" "}
+        </div>
         {/*<!-- sidebar end --> */}
         {/* <!-- Media Links Area End--> */}
         {/* <!-- Site Navigation Area End--> */}

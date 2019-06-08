@@ -1,27 +1,6 @@
-// .site__container {
-//   min-height: 100%;
-//   display: grid;
-//   grid-template-columns: [sidebar] 420px [content] 1fr [image] 40%;
-//   grid-template-rows: 1fr;
-//   overflow-x: hidden;
-// }
-
-/* closed */
-.site__container {
+.site-container {
   height: 100%;
   display: grid;
   grid-template-columns: [sidebar] 420px [content] 1fr [image] 40%;
   grid-template-rows: 1fr;
-}
-
-.site__description,
-.site__footer {
-  color: #c0d3d3;
-}
-
-.site__title {
-  grid-row: description;
-  font-size: 3rem;
-  color: white;
-  align-items: center;
 }

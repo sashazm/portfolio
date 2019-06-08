@@ -31,7 +31,15 @@ ul {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 0;
+  position: relative;
+  transition: 0.5s;
 }
 
 // moves navigation off the screen and moves main content to the left
