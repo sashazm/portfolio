@@ -1,0 +1,18 @@
+.cat-links {
+  display: flex;
+  flex-direction: row;
+  /* color: #a81f3d; */
+}
+
+.cat-links__single {
+  margin: -1rem 2rem;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4e4d48;
+}
+
+.cat-links__single--alt {
+  color: #b12040;
+}

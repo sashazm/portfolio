@@ -1,3 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #333;
+  font-family: "calibri", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
 // moves navigation off the screen and moves main content to the left
 .is-closed {
   margin-left: -320px;
