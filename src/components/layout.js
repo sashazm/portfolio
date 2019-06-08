@@ -32,8 +32,8 @@ const Layout = ({ children }) => (
           <section className="sidebar__nav" tabindex="0">
             {/* <!-- Header Area Start--> */}
             <div className="site__info">
-              <h1 className="sidebar__title">Sashas Portfolio</h1>
-              <p className="sidebar__description">
+              <h1 className="sidebar__nav-title">Sashas Portfolio</h1>
+              <p className="sidebar__nav-description">
                 I'm a multilingual, based in Sacramento area.
               </p>
             </div>
@@ -75,7 +75,7 @@ const Layout = ({ children }) => (
             </nav>
             {/* <!-- Footer Area Start --> */}
             <footer>
-              <div className="sidebar__footer">© 2018.</div>
+              <div className="sidebar__nav-footer">© 2018.</div>
             </footer>
           </section>
 

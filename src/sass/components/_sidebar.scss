@@ -7,19 +7,6 @@
   width: 420px;
   transition: left 0.3s ease;
   z-index: 1;
-
-  &__title,
-  &__description,
-  &__footer {
-    color: #c0d3d3;
-    margin: 0 1.5rem;
-  }
-
-  &__title {
-    grid-row: description;
-    font-size: 3rem;
-    color: white;
-  }
 }
 
 /* open */
@@ -30,6 +17,18 @@
   z-index: 1;
   position: absolute;
   background-image: radial-gradient($darkest-blue 0%, $dark-blue 100%);
+
+  &-title,
+  &-description,
+  &-footer {
+    color: $light-blue;
+    margin: 0 1.5rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    color: $white;
+  }
 }
 
 /* open */
