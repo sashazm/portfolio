@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       // <!-- Site Navigation Area Start-->
       <div className="site__container">
-        <div className="sidebar">
+        <div className="sidebar is-closed">
           <section className="sidebar__nav" tabindex="0">
             {/* <!-- Header Area Start--> */}
             <div className="site__info">
@@ -107,7 +107,7 @@ const Layout = ({ children }) => (
         {/* <!-- Media Links Area End--> */}
         {/* <!-- Site Navigation Area End--> */}
         {/* <!-- Site Main Content Area Start--> */}
-        <main className="content">{children}</main>
+        <main className="content is-closed">{children}</main>
         {/* // <!-- Featured Image Start --> */}
         <ImageMain />
         {/* // <!-- Featured Image End --> */}

@@ -1,0 +1,9 @@
+.content {
+  grid-column: content;
+  display: grid;
+  grid-template-rows: [intro] 1fr [projects] 2fr;
+  background-color: #fff;
+  height: 100%;
+  max-width: auto;
+  padding: 10% 20%;
+}

@@ -3,7 +3,7 @@
 
 // @import "variables";
 // @import "mixins";
-// @import "base";
+@import "base";
 @import "components/**/*";
 
 * {
@@ -37,7 +37,7 @@ a {
 .site__container {
   height: 100%;
   display: grid;
-  grid-template-columns: [sidebar] 420px [content] 1fr [image] 1fr;
+  grid-template-columns: [sidebar] 420px [content] 1fr [image] 40%;
   grid-template-rows: 1fr;
   overflow-x: hidden;
 }
@@ -65,8 +65,8 @@ a {
   grid-template-columns: [menu] 320px [social] 100px;
   grid-template-rows: 1fr;
   height: 100%;
-  width: 570px;
-  left: -320px;
+  width: 420px;
+  // left: -320px;
   transition: left 0.3s ease;
   z-index: 3;
 }
@@ -141,14 +141,6 @@ a {
 // }
 
 /* closed */
-.content {
-  grid-column: content;
-  display: grid;
-  grid-template-rows: [intro] 1fr [projects] 2fr;
-  background-color: #fff;
-  height: 100%;
-  padding: 10% 20%;
-}
 
 .content__title {
   font-size: 3rem;
