@@ -3,15 +3,31 @@
   font-size: 18px;
 }
 
+// Fluid Typography.
+$min_width: 320px;
+$max_width: 1800px;
+$min_font: 18px;
+$max_font: 20px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  color: #333;
-  font-family: "calibri", sans-serif;
+  color: $darkest-blue;
+  font-family: $font-family--sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  line-height: 1.6;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -21,4 +37,26 @@ a {
 // moves navigation off the screen and moves main content to the left
 .is-closed {
   margin-left: -320px;
+}
+
+.u-centered {
+  text-align: center;
+}
+
+//  Hide only visually, but have it available for screen readers:
+//  https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+//  1. For long content, line feeds are not interpreted as spaces and small width
+//     causes content to wrap 1 word per line:
+//     https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+
+.u-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; // 1
 }

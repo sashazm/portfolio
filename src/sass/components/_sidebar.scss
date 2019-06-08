@@ -1,28 +1,10 @@
-/* open */
-// .sidebar {
-//   position: fixed;
-//   display: grid;
-//   grid-template-columns: [menu] 320px [social] 100px;
-//   grid-template-rows: 1fr;
-//   height: 100% !important;
-//   transition: left 0.3s ease;
-//   z-index: 3;
-//   margin:0;
-// }
-
-// .sidebar-open {
-//   left:0;
-// }
-
-/* closed */
 .sidebar {
   position: fixed;
   display: grid;
   grid-template-columns: [menu] 320px [social] 100px;
   grid-template-rows: 1fr;
-  height: 100%;
+  height: 100% !important;
   width: 420px;
-  // left: -320px;
   transition: left 0.3s ease;
   z-index: 3;
 }
@@ -35,7 +17,7 @@
 //   position: absolute;
 //   overflow-x: hidden;
 //   z-index: 3;
-//   background-image: radial-gradient( #0d3c55 0%, #0f5b78 100%);
+//   background-image: radial-gradient( $darkest-blue 0%, $dark-blue 100%);
 //   /* background-color: #0f5b78; */
 //   display: grid;
 //   grid-template-rows: [description] 2fr [navigation] 2fr [footer] 2fr;
@@ -46,7 +28,7 @@
 .sidebar__social {
   grid-column: social;
   min-height: 100vh;
-  background-color: #0d3c55;
+  background-color: $darkest-blue;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -57,7 +39,7 @@
 .nav-toggle {
   text-align: center;
   font-weight: bolder;
-  color: #f88c57;
+  color: $complementary;
   /* background: none; */
   cursor: pointer;
   display: block;
