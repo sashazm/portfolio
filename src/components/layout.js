@@ -28,12 +28,12 @@ const Layout = ({ children }) => (
     render={data => (
       // <!-- Site Navigation Area Start-->
       <div className="site__container">
-        <div className="sidebar is-closed">
+        <div className="sidebar">
           <section className="sidebar__nav" tabindex="0">
             {/* <!-- Header Area Start--> */}
             <div className="site__info">
-              <h1 className="site__title">Sashas Portfolio</h1>
-              <p className="site__description">
+              <h1 className="sidebar__title">Sashas Portfolio</h1>
+              <p className="sidebar__description">
                 I'm a multilingual, based in Sacramento area.
               </p>
             </div>
@@ -75,30 +75,30 @@ const Layout = ({ children }) => (
             </nav>
             {/* <!-- Footer Area Start --> */}
             <footer>
-              <div className="site__footer">© 2018.</div>
+              <div className="sidebar__footer">© 2018.</div>
             </footer>
           </section>
 
           {/* <!-- Media Links Area Start--> */}
-          <section className="sidebar__social">
+          <section className="sidebar__social u-centered">
             {/* <!-- Social Media Links --> */}
             {/* <!-- Menu Toggle --> */}
             <div className="nav-toggle">
-              <div className="nav-toggle__icon">1</div>
+              <div className="nav-toggle__icon nav-icon">1</div>
             </div>
-            <a href="#" className="social-icon email">
+            <a href="#" className="nav-icon email">
               <i className="fas fa-at"></i>2
             </a>
-            <a href="#" className="social-icon github">
+            <a href="#" className="nav-icon github">
               <i className="fab fa-github"></i>3
             </a>
-            <a href="#" className="social-icon drupal">
+            <a href="#" className="nav-icon drupal">
               <i className="fab fa-drupal"></i>4
             </a>
-            <a href="#" className="social-icon codepen">
+            <a href="#" className="nav-icon codepen">
               <i className="fab fa-codepen"></i>5
             </a>
-            <a href="#" className="social-icon codecamp">
+            <a href="#" className="nav-icon codecamp">
               <i className="fa fa-free-code-camp"></i>6
             </a>
           </section>

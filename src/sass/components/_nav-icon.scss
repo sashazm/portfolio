@@ -1,0 +1,16 @@
+.nav-icon {
+  font-weight: bolder;
+  color: $complementary;
+  // background: red;
+  cursor: pointer;
+  display: block;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0;
+  padding: 2rem 0;
+
+  &:hover {
+    color: #eac743;
+  }
+}
