@@ -39,7 +39,7 @@ const Layout = ({ children }) => (
             </div>
 
             {/* <!-- Menu Links Start --> */}
-            <nav className="menu__container">
+            <nav>
               <ul className="menu menu--active">
                 <li className="menu__item">
                   <a href="index.html" className="current menu__link">
