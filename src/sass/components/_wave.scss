@@ -23,18 +23,18 @@
   background: #a81f3d;
   opacity: 0.5;
   animation: waves 5s infinite linear;
-}
 
-.wave.wave--second {
-  background: #f88c57;
-  opacity: 0.6;
-  animation: waves 6s infinite linear;
-}
+  &--second {
+    background: #f88c57;
+    opacity: 0.6;
+    animation: waves 6s infinite linear;
+  }
 
-.wave.wave--third {
-  background: #2ad4ff;
-  opacity: 0.5;
-  animation: waves 8s infinite linear;
+  &--third {
+    background: #2ad4ff;
+    opacity: 0.5;
+    animation: waves 8s infinite linear;
+  }
 }
 
 @keyframes waves {
