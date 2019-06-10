@@ -19,9 +19,9 @@ class Sidebar extends React.Component {
 
   render() {
     const classMenuActive = this.state.showMenu ? "is-closed" : ""
-    const classToggleActive = this.state.showMenu ? "nav-toggle--active" : ""
+    const classToggleActive = this.state.showMenu ? "" : "nav-toggle--active"
     return (
-      <div className="sidebar">
+      <div className={`sidebar ${classMenuActive}`}>
         <section className={`sidebar__nav`} tabIndex="0">
           {/* <!-- Header Area Start--> */}
           <div>
@@ -43,9 +43,11 @@ class Sidebar extends React.Component {
 
         {/* <!-- Media Links Area Start--> */}
         <section className="sidebar__social u-centered">
-          {/* <!-- Social Media Links --> */}
-          {/* <!-- Menu Toggle --> */}
-          <div className="nav-toggle nav-link nav-icon nav-toggle--active">
+          {/* when button is clicked fire up a toggleMenu method */}
+          <div
+            className={`nav-toggle nav-link nav-icon ${classToggleActive}`}
+            onClick={this.toggleMenu}
+          >
             <span className="nav-toggle__icon" />
           </div>
           <MediaLinks />
