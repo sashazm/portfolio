@@ -9,8 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import ImageMain from "../components/image-main"
-import Menu from "../components/menu"
-import MediaLinks from "../components/media-links"
+import Sidebar from "./sidebar"
 
 // reset before applying your styles
 import "../sass/normalize.scss"
@@ -30,36 +29,7 @@ const Layout = ({ children }) => (
     render={data => (
       // <!-- Site Navigation Area Start-->
       <div className="site-container">
-        <div className="sidebar">
-          <section className={`sidebar__nav`} tabIndex="0">
-            {/* <!-- Header Area Start--> */}
-            <div>
-              <h1 className="sidebar__nav-title">Sashas Portfolio</h1>
-              <p className="sidebar__nav-description">
-                I'm a multilingual, based in Sacramento area.
-              </p>
-            </div>
-
-            {/* <!-- Menu Links Start --> */}
-            <nav>
-              <Menu />
-            </nav>
-            {/* <!-- Footer Area Start --> */}
-            <footer>
-              <div className="sidebar__nav-footer">© 2018.</div>
-            </footer>
-          </section>
-
-          {/* <!-- Media Links Area Start--> */}
-          <section className="sidebar__social u-centered">
-            {/* <!-- Social Media Links --> */}
-            {/* <!-- Menu Toggle --> */}
-            <div className="nav-toggle nav-link nav-icon nav-toggle--active">
-              <span className="nav-toggle__icon" />
-            </div>
-            <MediaLinks />
-          </section>
-        </div>
+        <Sidebar />
         {/*<!-- sidebar end --> */}
         {/* <!-- Media Links Area End--> */}
         {/* <!-- Site Navigation Area End--> */}
