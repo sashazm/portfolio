@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import ImageMain from "../components/image-main"
 import Header from "./header"
+import MediaLinks from "./media-links"
 // reset before applying your styles
 import "../sass/normalize.scss"
 import "../sass/styles.scss"
@@ -29,7 +30,7 @@ const Layout = ({ children }) => (
       // <!-- Site Navigation Area Start-->
       <div className="site-container">
         <div className="sidebar">
-          <section className="sidebar__nav" tabindex="0">
+          <section className="sidebar__nav" tabIndex="0">
             {/* <!-- Header Area Start--> */}
             <div>
               <h1 className="sidebar__nav-title">Sashas Portfolio</h1>
@@ -96,28 +97,14 @@ const Layout = ({ children }) => (
             <div className="nav-toggle">
               <div className="nav-toggle__icon nav-link nav-icon">1</div>
             </div>
-            <a href="#" className="nav-icon nav-link email">
-              <i className="fas fa-at"></i>2
-            </a>
-            <a href="#" className="nav-icon nav-link github">
-              <i className="fab fa-github"></i>3
-            </a>
-            <a href="#" className="nav-icon nav-link drupal">
-              <i className="fab fa-drupal"></i>4
-            </a>
-            <a href="#" className="nav-icon nav-link codepen">
-              <i className="fab fa-codepen"></i>5
-            </a>
-            <a href="#" className="nav-icon nav-link codecamp">
-              <i className="fa fa-free-code-camp"></i>6
-            </a>
+            <MediaLinks />
           </section>
         </div>
         {/*<!-- sidebar end --> */}
         {/* <!-- Media Links Area End--> */}
         {/* <!-- Site Navigation Area End--> */}
         {/* <!-- Site Main Content Area Start--> */}
-        <main className="content is-closed">{children}</main>
+        <main className="content">{children}</main>
         {/* // <!-- Featured Image Start --> */}
         <ImageMain />
         {/* // <!-- Featured Image End --> */}
