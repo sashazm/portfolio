@@ -9,9 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import ImageMain from "../components/image-main"
-import Header from "./header"
-import Menu from "./menu"
-import MediaLinks from "./media-links"
+import Menu from "../components/menu"
+import MediaLinks from "../components/media-links"
+
 // reset before applying your styles
 import "../sass/normalize.scss"
 import "../sass/styles.scss"
@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
       // <!-- Site Navigation Area Start-->
       <div className="site-container">
         <div className="sidebar">
-          <section className="sidebar__nav" tabIndex="0">
+          <section className={`sidebar__nav`} tabIndex="0">
             {/* <!-- Header Area Start--> */}
             <div>
               <h1 className="sidebar__nav-title">Sashas Portfolio</h1>
@@ -54,8 +54,8 @@ const Layout = ({ children }) => (
           <section className="sidebar__social u-centered">
             {/* <!-- Social Media Links --> */}
             {/* <!-- Menu Toggle --> */}
-            <div className="nav-toggle">
-              <div className="nav-toggle__icon nav-link nav-icon">1</div>
+            <div className="nav-toggle nav-link nav-icon nav-toggle--active">
+              <span className="nav-toggle__icon" />
             </div>
             <MediaLinks />
           </section>
@@ -64,7 +64,7 @@ const Layout = ({ children }) => (
         {/* <!-- Media Links Area End--> */}
         {/* <!-- Site Navigation Area End--> */}
         {/* <!-- Site Main Content Area Start--> */}
-        <main className="content">{children}</main>
+        <main className={`content`}>{children}</main>
         {/* // <!-- Featured Image Start --> */}
         <ImageMain />
         {/* // <!-- Featured Image End --> */}
