@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import ImageMain from "../components/image-main"
@@ -15,33 +15,49 @@ import Sidebar from "./sidebar"
 import "../sass/normalize.scss"
 import "../sass/styles.scss"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+class Layout extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showMenu: false,
+    }
+  }
+  toggleMenu = () => {
+    this.setState({
+      showMenu: !this.state.showMenu,
+    })
+  }
+
+  render() {
+    const children = this.props.children
+    const classMenuActive = this.state.showMenu ? "is-closed" : ""
+    const classToggleActive = this.state.showMenu ? "" : "nav-toggle--active"
+    return (
+      <StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
           }
-        }
-      }
-    `}
-    render={data => (
-      // <!-- Site Navigation Area Start-->
-      <div className="site-container">
-        <Sidebar />
-        {/*<!-- sidebar end --> */}
-        {/* <!-- Media Links Area End--> */}
-        {/* <!-- Site Navigation Area End--> */}
-        {/* <!-- Site Main Content Area Start--> */}
-        <main className={`content`}>{children}</main>
-        {/* // <!-- Featured Image Start --> */}
-        <ImageMain />
-        {/* // <!-- Featured Image End --> */}
-      </div>
-    )}
-  />
-)
+        `}
+        render={data => (
+          <div className="site-container">
+            <Sidebar
+              toggleMenu={this.toggleMenu}
+              classMenuActive={classMenuActive}
+              classToggleActive={classToggleActive}
+            />
+            <main className={`content ${classMenuActive}`}>{children}</main>
+            <ImageMain />
+          </div>
+        )}
+      />
+    )
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
