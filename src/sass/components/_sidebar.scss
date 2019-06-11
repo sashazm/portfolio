@@ -6,7 +6,7 @@
   width: 420px;
   transition: left 0.3s ease;
   z-index: 1;
-  height: 100% !important;
+  height: 100%;
   transition: left 0.5s ease;
 }
 
@@ -18,7 +18,7 @@
   z-index: 1;
   position: absolute;
   background-image: radial-gradient($darkest-blue 0%, $dark-blue 100%);
-  height: 100% !important;
+  height: 100%;
 
   &-title,
   &-description,
@@ -36,10 +36,9 @@
 /* open */
 .sidebar__social {
   grid-column: social;
-  height: 100% !important;
+  height: 100%;
   background-color: $darkest-blue;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr) 2fr;
+  grid-template-rows: repeat(7, 100px) 2fr;
   align-items: center;
 }

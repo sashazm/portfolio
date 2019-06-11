@@ -45,7 +45,7 @@ class Sidebar extends React.Component {
         <section className="sidebar__social u-centered">
           {/* when button is clicked fire up a toggleMenu method */}
           <div
-            className={`nav-toggle nav-link nav-icon ${classToggleActive}`}
+            className={`nav-toggle nav-icon ${classToggleActive}`}
             onClick={this.toggleMenu}
           >
             <span className="nav-toggle__icon" />
