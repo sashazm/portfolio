@@ -10,7 +10,6 @@
   transition: left 0.5s ease;
 }
 
-/* open */
 .sidebar__nav {
   grid-column: menu;
   grid-template-rows: [description] 1fr [navigation] 1fr [footer] 1fr;
@@ -28,12 +27,18 @@
   }
 
   &-title {
-    font-size: 3rem;
-    color: $white;
+    font-size: 2rem;
+    color: $yellow;
+    font-family: $font-family-main--alt;
+    // @include text-shadow($light-blue, $darkest-blue);
+    letter-spacing: 3px;
+
+    &--alt {
+      color: #00d4aa;
+    }
   }
 }
 
-/* open */
 .sidebar__social {
   grid-column: social;
   height: 100%;

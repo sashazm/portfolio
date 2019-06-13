@@ -11,7 +11,9 @@ class Sidebar extends React.Component {
         <section className={`sidebar__nav`} tabIndex="0">
           {/* <!-- Header Area Start--> */}
           <div>
-            <h1 className="sidebar__nav-title">Sashas Portfolio</h1>
+            <h1 className="sidebar__nav-title">
+              Sasha<span className="sidebar__nav-title--alt">Miller</span>
+            </h1>
             <p className="sidebar__nav-description">
               I'm a multilingual, based in Sacramento area.
             </p>
