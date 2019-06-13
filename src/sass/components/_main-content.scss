@@ -5,21 +5,11 @@
   background-color: #fff;
   height: 100%;
   max-width: auto;
-  padding: 10% 20%;
+  padding: 0 20% 10%;
 
   &__title {
-    font-size: 3rem;
+    // font-size: 3rem;
     color: #0d3c55;
+    margin-top: 0;
   }
 }
-
-/* open */
-// .content {
-//   grid-column: content;
-//   display: grid;
-//   grid-template-rows: [intro] 1fr [projects] 2fr;
-//   position: relative;
-//   background-color: #fff;
-//   height: 100%;
-//   padding: 10% 15% 0;
-// }

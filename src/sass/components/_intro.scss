@@ -1,0 +1,26 @@
+.intro {
+  &__title {
+    font-size: 4rem;
+    margin: 0;
+    color: $yellow;
+    letter-spacing: 4px;
+    &--alt {
+      color: hsl(168, 100%, 42%);
+    }
+  }
+
+  &__photo {
+    background: url("https://avatars3.githubusercontent.com/u/48044823?s=400&u=a549806150129b4e00172a8c3be305add034e0be&v=4");
+    background-size: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 0.5em;
+    shape-outside: circle(50%);
+    float: left;
+  }
+
+  &__text {
+    margin: 1.5rem 0 3rem;
+  }
+}

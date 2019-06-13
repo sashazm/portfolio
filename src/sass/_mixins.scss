@@ -24,3 +24,21 @@
     }
   }
 }
+
+@mixin content-divider($color) {
+  height: 2rem;
+  display: flex;
+  position: relative;
+  width: 80%;
+  border-top: 4px solid $color;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  &:after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid $color;
+    width: 60%;
+    height: 1.9rem;
+  }
+}

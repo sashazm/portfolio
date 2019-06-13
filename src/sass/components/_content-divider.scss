@@ -1,0 +1,32 @@
+.content-divider {
+  &--contact {
+    @include content-divider($yellow);
+  }
+}
+
+.content-divider__text {
+  position: absolute;
+  top: -1.5rem;
+  font-family: $font-family-main--alt;
+  font-size: 3rem;
+  z-index: 2;
+  justify-content: center;
+  height: 2.5rem;
+  &--contact {
+    color: $darkest-blue;
+  }
+}
+
+.content-divider__icon {
+  position: absolute;
+  width: 50px;
+  top: -24px;
+  font-size: 1.5rem;
+  z-index: 1;
+  background-color: $white;
+  // align-self: center;
+
+  &--contact {
+    color: $yellow;
+  }
+}
