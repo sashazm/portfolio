@@ -5,7 +5,7 @@ $font-family-main--alt: "Saira Extra Condensed", sans-serif;
 
 // Colors
 $white: #fff;
-$black: #000;
+$black: #242424;
 $gray: #4e4d48;
 $darkest-blue: #0d3c55;
 $dark-blue: #0f5b78;
@@ -21,3 +21,9 @@ $bp-medium: 600px;
 $bp-small: 450px;
 $bp-min: 320px;
 $bp-nav-big: 1344px;
+
+// Layout
+$container: 40vw;
+$container--big: 45vw;
+$margin-closed: -320px;
+$extra-space: 10vw;
