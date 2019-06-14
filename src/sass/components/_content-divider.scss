@@ -1,6 +1,7 @@
 .content-divider {
   &--contact {
     @include content-divider($yellow);
+    margin-top: 7rem;
   }
 }
 
