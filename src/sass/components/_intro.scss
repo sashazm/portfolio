@@ -1,11 +1,10 @@
 .intro {
   &__title {
     font-size: 4rem;
-    margin: 0;
     color: $yellow;
     letter-spacing: 4px;
     &--alt {
-      color: hsl(168, 100%, 42%);
+      color: #00d6ab;
     }
   }
 
