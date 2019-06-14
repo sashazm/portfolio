@@ -19,19 +19,19 @@ class Layout extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      showMenu: false,
+      hideMenu: true, //menu is closed by default
     }
   }
   toggleMenu = () => {
     this.setState({
-      showMenu: !this.state.showMenu,
+      hideMenu: !this.state.hideMenu,
     })
   }
 
   render() {
     const children = this.props.children
-    const classMenuActive = this.state.showMenu ? "is-closed" : ""
-    const classToggleActive = this.state.showMenu ? "" : "nav-toggle--active"
+    const classMenuActive = this.state.hideMenu ? "is-closed" : ""
+    const classToggleActive = this.state.hideMenu ? "" : "nav-toggle--active"
     return (
       <StaticQuery
         query={graphql`
@@ -50,7 +50,9 @@ class Layout extends Component {
               classMenuActive={classMenuActive}
               classToggleActive={classToggleActive}
             />
-            <main className={`content ${classMenuActive}`}>{children}</main>
+            <main className={`content l-container ${classMenuActive}`}>
+              {children}
+            </main>
             <ImageMain />
           </div>
         )}
