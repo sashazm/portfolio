@@ -2,8 +2,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import ReactTextRotator from "react-text-rotator"
 import { FaCommentAlt } from "react-icons/fa"
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const Intro = () => {
+const Intro = ({ data }) => {
   const content = [
     {
       text: "Hello",
@@ -67,8 +69,44 @@ const Intro = () => {
           </a>
         </div>
       </header>
+      <section className="case-study">
+        <h2 className="case-study__title edge--top u-centered">Case Study</h2>
+        <p className="case-study__text">
+          Multiple named cell tokens within and between rows create a single
+          named grid area that spans the corresponding grid cells. Unless those
+          cells form a rectangle, the declaration is invalid.
+        </p>
+        <a
+          href="https://salon-demo.netlify.com"
+          target="_blank"
+          title="Akame demo on Netlify"
+        >
+          <AkameBackground />
+        </a>
+      </section>
     </article>
   )
 }
 
+const AkameBackground = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        AkameBackground: file(relativePath: { eq: "akame-background.png" }) {
+          childImageSharp {
+            fluid(quality: 60, maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Img
+        fluid={data.AkameBackground.childImageSharp.fluid}
+        className="case-study__image"
+      />
+    )}
+  />
+)
 export default Intro
