@@ -1,8 +1,10 @@
 .nav-icon {
-  font-size: 40px;
+  font-size: 25px;
   color: $light-blue;
-  // background: red;
   &:hover {
     color: #eac743;
+  }
+  @include breakpoint($bp-medium) {
+    font-size: 40px;
   }
 }

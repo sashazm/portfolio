@@ -7,10 +7,14 @@
   justify-content: center;
 
   &__icon {
-    @include burger(40px, 5px, 6px, $yellow);
+    @include burger(30px, 4px, 5px, $yellow);
 
     .nav-toggle--active & {
       @include burger-to-cross;
+    }
+
+    @include breakpoint($bp-medium) {
+      @include burger(40px, 5px, 6px, $yellow);
     }
   }
 }

@@ -19,11 +19,17 @@ $bp-big: 1000px;
 $bp-large: 800px;
 $bp-medium: 600px;
 $bp-small: 450px;
-$bp-min: 320px;
-$bp-nav-big: 1344px;
+$bp-min: 360px;
 
 // Layout
+$social: 20%;
+$social--big: 100px;
+$container--small: 100% - $social;
 $container: 40vw;
 $container--big: 45vw;
-$margin-closed: -320px;
+$sidebar: 360px;
+$menu: 285px;
+$menu-big: 260px;
+$margin-closed: -285px;
+$margin-closed-big: -260px;
 $extra-space: 10vw;
