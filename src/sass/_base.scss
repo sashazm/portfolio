@@ -3,7 +3,7 @@
 }
 
 // Fluid Typography.
-$min_width: 320px;
+$min_width: 360px;
 $max_width: 1800px;
 $min_font: 18px;
 $max_font: 20px;
@@ -53,10 +53,17 @@ a {
 // moves navigation off the screen and moves main content to the left
 .is-closed {
   margin-left: $margin-closed;
+
+  @include breakpoint($bp-medium) {
+    margin-left: $margin-closed-big;
+  }
 }
 
 .l-container.is-closed {
-  width: $container--big + $extra-space;
+  width: $container;
+  @include breakpoint($bp-medium) {
+    width: $container--big + $extra-space;
+  }
 }
 
 .u-centered {

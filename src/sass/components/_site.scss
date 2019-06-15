@@ -1,6 +1,13 @@
 .site-container {
   height: 100%;
   display: grid;
-  grid-template-columns: [sidebar] 420px [content] 1fr [image] 40%;
+  grid-template-columns: [sidebar] 360px [content] 1fr;
   grid-template-rows: 1fr;
+
+  @include breakpoint($bp-medium) {
+  }
+
+  @include breakpoint($bp-medium) {
+    grid-template-columns: [sidebar] 360px [content] 1fr [image] 40%;
+  }
 }

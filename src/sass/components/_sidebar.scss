@@ -10,7 +10,7 @@
   transition: left 0.5s ease;
 
   @include breakpoint($bp-medium) {
-    grid-template-columns: [menu] $menu [social] $social--big;
+    grid-template-columns: [menu] $menu-big [social] $social--big;
   }
 }
 
@@ -48,7 +48,10 @@
   background-color: $darkest-blue;
   display: grid;
   //making 7 squares by setting hight same as width
-  grid-template-rows: repeat(7, $social--big);
+  grid-template-rows: repeat(7, $social);
   align-items: center;
   align-self: start;
+  @include breakpoint($bp-medium) {
+    grid-template-rows: repeat(7, $social--big);
+  }
 }

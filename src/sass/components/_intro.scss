@@ -1,22 +1,49 @@
 .intro {
+  display: grid;
+  grid-template-areas:
+    "photo"
+    "title"
+    "text";
+
+  @include breakpoint($bp-medium) {
+    display: initial;
+  }
+
   &__title {
-    font-size: 4rem;
+    grid-area: title;
     color: $yellow;
-    letter-spacing: 4px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+
     &--alt {
-      color: #00d6ab;
+      color: $pacific-blue;
+    }
+    @include breakpoint($bp-medium) {
+      font-size: 4rem;
+      letter-spacing: 4px;
     }
   }
 
   &__photo {
-    background: url("https://avatars3.githubusercontent.com/u/48044823?s=400&u=a549806150129b4e00172a8c3be305add034e0be&v=4");
-    background-size: cover;
-    border-radius: 50%;
+    display: inline-block;
+    grid-area: photo;
+    background: url("https://avatars3.githubusercontent.com/u/48044823?s=400&u=a549806150129b4e00172a8c3be305add034e0be&v=4")
+      no-repeat;
+    background-size: contain;
     height: 200px;
     width: 200px;
-    margin: 0.5em;
-    shape-outside: circle(50%);
-    float: left;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1rem solid $pacific-blue;
+    border-radius: 50%;
+
+    @include breakpoint($bp-medium) {
+      border-radius: 50%;
+      background-size: cover;
+      margin: 0.5em;
+      shape-outside: circle(50%);
+      float: left;
+    }
   }
 
   &__text {

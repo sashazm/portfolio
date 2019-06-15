@@ -15,6 +15,11 @@
 
     @include breakpoint($bp-medium) {
       @include burger(40px, 5px, 6px, $yellow);
+
+      // due to a different value for hight/width animation had to be included again
+      .nav-toggle--active & {
+        @include burger-to-cross;
+      }
     }
   }
 }

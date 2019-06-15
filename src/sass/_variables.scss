@@ -12,6 +12,7 @@ $dark-blue: #0f5b78;
 $light-blue: #c0d3d3;
 $yellow: #eac743;
 $raspberry: #b12040;
+$pacific-blue: #00d6ab;
 
 // Breakpoints
 $bp-max: 1500px;
@@ -22,14 +23,16 @@ $bp-small: 450px;
 $bp-min: 360px;
 
 // Layout
-$social: 20%;
+$social: 75px;
 $social--big: 100px;
-$container--small: 100% - $social;
-$container: 40vw;
-$container--big: 45vw;
+// subtracting the width of $social in percentages
+$container: 100vw - 20vw;
+$container--big: 40vw;
 $sidebar: 360px;
 $menu: 285px;
+// 25px are removed because $social is replaced with $social-big
 $menu-big: 260px;
 $margin-closed: -285px;
+// 25px are removed because $social is replaced with $social-big
 $margin-closed-big: -260px;
 $extra-space: 10vw;
