@@ -1,23 +1,30 @@
-.site__container-featured-image {
+.featured-image {
   display: none;
+
   @include breakpoint($bp-medium) {
     display: block;
-    grid-column: image;
-    z-index: -1;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    margin-left: $social--big;
+    height: 400px;
+    background-image: url("../images/creativity-tablet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
   }
-}
 
-.featured-image {
   @include breakpoint($bp-large) {
-    height: 100%;
-    width: 40%;
-    right: 0;
+    grid-column: image;
     position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
     background-image: url("../images/creativity-small.png");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin: 0;
+    padding: 0;
   }
 }

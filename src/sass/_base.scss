@@ -62,7 +62,7 @@ a {
 .l-container.is-closed {
   width: $container;
   @include breakpoint($bp-medium) {
-    width: $container--big + $extra-space;
+    width: $container--big;
   }
 }
 

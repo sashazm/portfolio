@@ -1,0 +1,16 @@
+.curved-text {
+  width: 100vw;
+  height: 400px;
+  margin: 0 50px;
+  // rotating words to be more centered
+  transform: rotate(20deg);
+
+  &__text {
+    fill: $yellow;
+    font-size: 1rem;
+  }
+
+  &__curve-transparent {
+    fill: transparent;
+  }
+}
