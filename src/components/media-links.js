@@ -8,7 +8,7 @@ import {
   FaPrint,
 } from "react-icons/fa"
 
-const MediaLinks = ({}) => (
+const MediaLinks = () => (
   <>
     <a href="/" className="nav-icon nav-link" aria-label="Contact me">
       <FaAt />
