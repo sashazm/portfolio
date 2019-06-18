@@ -36,25 +36,26 @@ const Intro = ({ data }) => {
   return (
     <article>
       <header className="intro">
-        {/* rotating text greeting */}
-        <h2 content__title>
-          Hello:{" "}
-          <ReactTextRotator
-            content={content}
-            time={3000}
-            startDelay={250}
-            transitionTime={200}
-          />
-        </h2>
-
+        <div className="intro__photo"></div>
         {/* title for the component */}
         <h1 className="intro__title">
           Sasha
           <span className="intro__title--alt">Miller</span>
         </h1>
-
+        {/* rotating text greeting */}
+        <div className="intro__greeting">
+          <h2 className="intro__greeting-rotator">
+            Hello:{" "}
+            <ReactTextRotator
+              content={content}
+              time={3000}
+              startDelay={250}
+              transitionTime={200}
+            />
+          </h2>
+        </div>
+        <div className="intro__photo intro__photo--desktop"></div>
         {/* photo */}
-        <div className="intro__photo"></div>
         <p className="intro__text">
           Front End Web Developer, living in Lodi, California. I am relentlessly
           pursuing a career in web-design and development and my goal is to work

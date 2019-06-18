@@ -1,13 +1,12 @@
 .sidebar {
   position: fixed;
+  width: $sidebar;
+  height: 100%;
   display: grid;
   grid-template-columns: [menu] $menu [social] $social;
   grid-template-rows: 1fr;
-  width: $sidebar;
   transition: left 0.3s ease;
   z-index: 1;
-  height: 100%;
-  transition: left 0.5s ease;
 
   @include breakpoint($bp-medium) {
     grid-template-columns: [menu] $menu-big [social] $social--big;
@@ -45,7 +44,7 @@
 .sidebar__social {
   grid-column: social;
   height: 100%;
-  background-color: $darkest-blue;
+  background-image: radial-gradient($dark-blue 0%, $darkest-blue 100%);
   display: grid;
   //making 7 squares by setting hight same as width
   grid-template-rows: repeat(7, $social);

@@ -7,13 +7,9 @@
     width: 100vw;
     margin: 0 0 0 $social--big;
     background-image: url("../images/creativity-tablet.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
-  }
-
-  @include breakpoint(790px) {
-    background-size: cover;
   }
 
   @include breakpoint($bp-big) {
@@ -28,13 +24,13 @@
   }
 
   @include breakpoint(1450px) {
-    background-image: url("../images/creativity-small.png");
+    background-image: url("../images/creativity-desktop.png");
     background-position: top center;
   }
+
   // Title
   &__title {
     margin: 0;
-    width: $container;
     display: flex;
     align-items: flex-start;
     font-size: 1.2rem;
@@ -43,7 +39,7 @@
     color: $yellow;
     white-space: nowrap;
 
-    // Breakpoint
+    // Title Breakpoint
     @include breakpoint(790px) {
       font-size: 1.5rem;
     }
@@ -83,6 +79,7 @@
       }
     }
 
+    // Title part Breakpoint
     @include breakpoint($bp-big) {
       &-part {
         padding: 1rem;

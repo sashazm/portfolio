@@ -40,14 +40,10 @@ a {
   position: relative;
   transition: 0.5s;
 }
+
 .l-container {
-  width: $container;
   margin-left: auto;
   margin-right: auto;
-
-  @include breakpoint($bp-big) {
-    width: $container--big;
-  }
 }
 
 // moves navigation off the screen and moves main content to the left
@@ -56,13 +52,6 @@ a {
 
   @include breakpoint($bp-medium) {
     margin-left: $margin-closed-big;
-  }
-}
-
-.l-container.is-closed {
-  width: $container;
-  @include breakpoint($bp-medium) {
-    width: $container--big;
   }
 }
 
