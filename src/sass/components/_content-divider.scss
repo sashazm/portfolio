@@ -1,18 +1,25 @@
 .content-divider {
   &--contact {
     @include content-divider($yellow);
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
 }
 
 .content-divider__text {
   position: absolute;
-  top: -1.5rem;
+  top: -0.9rem;
   font-family: $font-family-main--alt;
-  font-size: 3rem;
+  font-size: 2rem;
   z-index: 2;
   justify-content: center;
-  height: 2.5rem;
+  height: 1.5rem;
+
+  @include breakpoint($bp-medium) {
+    font-size: 3rem;
+    height: 2.5rem;
+    top: -1.5rem;
+  }
+
   &--contact {
     color: $darkest-blue;
   }
@@ -20,12 +27,17 @@
 
 .content-divider__icon {
   position: absolute;
-  width: 50px;
-  top: -24px;
-  font-size: 1.5rem;
+  width: 30px;
+  top: -14px;
+  font-size: 1.1rem;
   z-index: 1;
   background-color: $white;
-  // align-self: center;
+
+  @include breakpoint($bp-medium) {
+    width: 50px;
+    font-size: 1.5rem;
+    top: -24px;
+  }
 
   &--contact {
     color: $yellow;

@@ -26,7 +26,7 @@
 }
 
 @mixin content-divider($color) {
-  height: 2rem;
+  height: 1.5rem;
   display: flex;
   position: relative;
   width: 80%;
@@ -34,12 +34,20 @@
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  @include breakpoint($bp-medium) {
+    height: 2rem;
+  }
+
   &:after {
     content: "";
     position: absolute;
     border-bottom: 4px solid $color;
     width: 60%;
-    height: 1.9rem;
+    height: 1.4rem;
+
+    @include breakpoint($bp-medium) {
+      height: 1.9rem;
+    }
   }
 }
 
