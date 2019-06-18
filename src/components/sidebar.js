@@ -32,12 +32,12 @@ class Sidebar extends React.Component {
         {/* <!-- Media Links Area Start--> */}
         <section className="sidebar__social u-centered">
           {/* when button is clicked fire up a toggleMenu method */}
-          <div
+          <button
             className={`nav-toggle nav-icon ${classToggleActive}`}
             onClick={this.props.toggleMenu}
           >
             <span className="nav-toggle__icon" />
-          </div>
+          </button>
           <MediaLinks />
         </section>
       </div>
