@@ -1,3 +1,6 @@
+$case-study: 5rem;
+$case-study-tablet: 8rem;
+
 .content-divider {
   &--contact {
     @include content-divider($yellow);
@@ -41,5 +44,14 @@
 
   &--contact {
     color: $yellow;
+  }
+}
+
+.line {
+  margin-top: $case-study;
+  color: $raspberry;
+
+  @include breakpoint($bp-medium) {
+    margin-top: $case-study-tablet;
   }
 }
