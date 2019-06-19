@@ -1,3 +1,4 @@
+$button-border: 1.5px solid #302f2d;
 .case-study {
   &__sub-title {
     color: $gray;
@@ -7,7 +8,7 @@
     text-transform: uppercase;
     color: $raspberry;
   }
-
+  // Akame project name
   &__title {
     font-family: $montserrat;
     color: $gray;
@@ -17,20 +18,11 @@
     font-weight: 400;
   }
 
+  // Screenshot of the Akame site
   &__image {
     width: 40vw;
     z-index: 1;
     border: 2px solid $gray;
-    float: left;
-    margin-right: 1rem;
-
-    &::before {
-      content: " ";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 2;
-    }
 
     @include breakpoint($bp-medium) {
       width: 30vw;
@@ -40,10 +32,67 @@
     @include breakpoint($bp-big) {
       width: 20vw;
     }
+
+    &-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content 2rem;
+      height: auto;
+      width: min-content;
+      float: right;
+      box-shadow: 0 6px 10px 0 #666;
+      margin-left: 1rem;
+      z-index: 2;
+
+      @include breakpoint($bp-medium) {
+        grid-template-rows: min-content 3rem;
+      }
+    }
+    // Project overview
+    &__text {
+      height: 100%;
+      margin: 0;
+    }
+  }
+}
+// LINK TO NETLIFY
+.showcase-link {
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  padding-left: 0.2rem;
+  border: $button-border;
+  background-color: #4e4d48;
+
+  @include breakpoint($bp-medium) {
+    padding-left: 0.5rem;
   }
 
+  &:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    background-color: #808080;
+    // icon rotation
+    .showcase-link__icon {
+      transform: rotateZ(45deg);
+    }
+  }
+  // link text
   &__text {
-    height: 100%;
-    margin: 0;
+    font-size: 1rem;
+    display: inline-block;
+    color: #efefef;
+
+    @include breakpoint($bp-medium) {
+      font-size: 1.2rem;
+      padding-left: 0.5rem;
+    }
+  }
+  // link icon
+  &__icon {
+    display: block;
+    color: #e9ecef;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    transition: 0.5s ease;
   }
 }
