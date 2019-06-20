@@ -6,7 +6,7 @@
   grid-template-columns: [menu] 1fr [social] $social;
   grid-template-rows: 1fr;
   transition: transform 0.3s ease;
-  z-index: 1;
+  z-index: 10;
   left: -$menu-width;
 
   @include breakpoint($bp-medium) {
@@ -49,6 +49,7 @@
   grid-template-rows: repeat(7, $social);
   align-items: center;
   align-self: start;
+
   @include breakpoint($bp-medium) {
     grid-template-rows: repeat(7, $social-desktop);
   }
