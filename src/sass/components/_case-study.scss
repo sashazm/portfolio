@@ -37,40 +37,54 @@ $button-border: 1.5px solid #302f2d;
   // Grid for the image and link
   &__image-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 2rem;
+    width: 80%;
+    grid-template-rows: 1fr min-content;
     height: auto;
-    width: min-content;
-    float: right;
+
     box-shadow: 0 6px 10px 0 #666;
-    margin: 0 1rem;
+    margin-bottom: 3rem;
+
     z-index: 2;
 
-    @include breakpoint($bp-medium) {
-      grid-template-rows: min-content 3rem;
-    }
-  }
-
-  // Case study image
-  &__image {
-    width: 40vw;
-    z-index: 1;
-    border: 2px solid $gray;
-
-    @include breakpoint($bp-medium) {
+    @include breakpoint(800px) {
+      grid-template-rows: 1fr min-content;
       width: 30vw;
-      border: 10px solid $gray;
+      float: right;
+      margin: 0 1rem 1rem;
     }
 
     @include breakpoint($bp-big) {
+      width: 60%;
+      float: none;
+    }
+
+    @include breakpoint(1600px) {
+      float: right;
+      margin: 0 1rem 1rem;
       width: 20vw;
+    }
+
+    // Case study image
+    &__image {
+      width: 100%;
+      // z-index: 1;
+      border: 2px solid $gray;
+
+      @include breakpoint(800px) {
+        border: 10px solid $gray;
+      }
+
+      @include breakpoint($bp-big) {
+        width: 100%;
+      }
     }
 
     // Case study text
     &__text {
-      height: 100%;
-      margin-top: 0;
-      clear: both;
+      @include breakpoint(800px) {
+        margin-top: 1rem;
+        clear: both;
+      }
     }
   }
 }
@@ -84,7 +98,15 @@ $button-border: 1.5px solid #302f2d;
   border: $button-border;
   background-color: #4e4d48;
 
+  height: 2rem;
+
+  @include breakpoint(450px) {
+    height: 3rem;
+    padding-left: 0.5rem;
+  }
+
   @include breakpoint($bp-medium) {
+    // height: 3rem;
     padding-left: 0.5rem;
   }
 
