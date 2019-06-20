@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: row;
   color: $gray;
-  font-family: $cat-links;
+  font-family: $montserrat;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 0.7rem;
+
+  @include breakpoint($bp-medium) {
+    // font-size: initial;
+  }
 
   &__single {
     margin: 0 1.5rem;

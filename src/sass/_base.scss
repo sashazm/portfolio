@@ -47,11 +47,11 @@ a {
 }
 
 // moves navigation off the screen and moves main content to the left
-.is-closed {
-  margin-left: $margin-closed;
+.is-open {
+  transform: translateX($menu-width);
 
   @include breakpoint($bp-medium) {
-    margin-left: $margin-closed-big;
+    transform: translateX($menu-width-desktop);
   }
 }
 

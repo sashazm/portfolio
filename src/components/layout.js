@@ -19,19 +19,23 @@ class Layout extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      hideMenu: true, //menu is closed by default
+      MenuOpen: false, //menu is closed by default//MenuOpen
     }
   }
+
+  // on click change state to opposite of what it was. this is the close/open menu switch.
   toggleMenu = () => {
     this.setState({
-      hideMenu: !this.state.hideMenu,
+      MenuOpen: !this.state.MenuOpen,
     })
   }
 
   render() {
     const children = this.props.children
-    const classMenuActive = this.state.hideMenu ? "is-closed" : ""
-    const classToggleActive = this.state.hideMenu ? "" : "nav-toggle--active"
+    //  // create a css class for the hamburger button if the menu state is true, this will slide menu out
+    const classMenuActive = this.state.MenuOpen ? "is-open" : ""
+    // apply "X" icon to nav toggle when menu is open
+    const classToggleActive = this.state.MenuOpen ? "nav-toggle--active" : ""
     return (
       <StaticQuery
         query={graphql`
@@ -44,16 +48,16 @@ class Layout extends Component {
           }
         `}
         render={data => (
-          <div className="site-container">
+          <div>
             <Sidebar
               toggleMenu={this.toggleMenu}
               classMenuActive={classMenuActive}
               classToggleActive={classToggleActive}
             />
-            <main className={`content l-container ${classMenuActive}`}>
-              {children}
-            </main>
-            <ImageMain />
+            <div className={`content-container ${classMenuActive}`}>
+              <main className="content l-container">{children}</main>
+              <ImageMain />
+            </div>
           </div>
         )}
       />

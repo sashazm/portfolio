@@ -1,24 +1,57 @@
 $button-border: 1.5px solid #302f2d;
 .case-study {
-  &__sub-title {
-    color: $gray;
-    font-family: $montserrat;
-    font-weight: 700;
-    font-size: 1rem;
+  &__title {
+    font-family: $font-family-main--alt;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: $black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0;
+
+    @include breakpoint($bp-medium) {
+      font-size: 1rem;
+    }
+  }
+
+  &__sub-title--alt {
+    font-family: $font-family-main--alt;
+    font-weight: 700;
+    font-size: 1.5rem;
     color: $raspberry;
   }
   // Akame project name
-  &__title {
+  &__title-big {
     font-family: $montserrat;
+    letter-spacing: initial;
     color: $gray;
     margin-top: 0.5rem;
     font-size: 3rem;
-    text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 2rem;
+
+    @include breakpoint($bp-medium) {
+      margin-bottom: 3rem;
+    }
+  }
+  // Grid for the image and link
+  &__image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 2rem;
+    height: auto;
+    width: min-content;
+    float: right;
+    box-shadow: 0 6px 10px 0 #666;
+    margin: 0 1rem;
+    z-index: 2;
+
+    @include breakpoint($bp-medium) {
+      grid-template-rows: min-content 3rem;
+    }
   }
 
-  // Screenshot of the Akame site
+  // Case study image
   &__image {
     width: 40vw;
     z-index: 1;
@@ -33,30 +66,17 @@ $button-border: 1.5px solid #302f2d;
       width: 20vw;
     }
 
-    &-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: min-content 2rem;
-      height: auto;
-      width: min-content;
-      float: right;
-      box-shadow: 0 6px 10px 0 #666;
-      margin-left: 1rem;
-      z-index: 2;
-
-      @include breakpoint($bp-medium) {
-        grid-template-rows: min-content 3rem;
-      }
-    }
-    // Project overview
+    // Case study text
     &__text {
       height: 100%;
-      margin: 0;
+      margin-top: 0;
+      clear: both;
     }
   }
 }
+
 // LINK TO NETLIFY
-.showcase-link {
+.image-link {
   grid-row: 2;
   display: flex;
   align-items: center;
@@ -72,7 +92,7 @@ $button-border: 1.5px solid #302f2d;
     box-shadow: 0 6px 14px 0 #666;
     background-color: #808080;
     // icon rotation
-    .showcase-link__icon {
+    .image-link__icon {
       transform: rotateZ(45deg);
     }
   }
@@ -87,6 +107,7 @@ $button-border: 1.5px solid #302f2d;
       padding-left: 0.5rem;
     }
   }
+
   // link icon
   &__icon {
     display: block;

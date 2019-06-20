@@ -8,7 +8,7 @@ class Sidebar extends React.Component {
     const classToggleActive = this.props.classToggleActive
     return (
       <div className={`sidebar ${classMenuActive}`}>
-        <section className={`sidebar__nav`} tabIndex="0">
+        <section className="sidebar__nav" tabIndex="0">
           {/* <!-- Header Area Start--> */}
           <div>
             <h1 className="sidebar__nav-title">

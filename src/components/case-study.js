@@ -10,23 +10,28 @@ import { FaExternalLinkSquareAlt } from "react-icons/fa"
 const CaseStudy = () => (
   <section className="case-study">
     <hr className="line" />
-    <h2 className="case-study__sub-title">Case Study</h2>
-    <h3 className="case-study__title">Akame hair salon</h3>
+    <h2 className="case-study__title case-study__sub-title--alt">Case Study</h2>
+    <h3 className="case-study__title case-study__title-big">
+      Akame hair salon
+    </h3>
     <div className="case-study__image-container">
       <AkameBackground />
       <a
         href="https://salon-demo.netlify.com"
         target="_blank"
         title="Akame demo on Netlify"
-        className="showcase-link"
+        className="image-link"
       >
-        <FaExternalLinkSquareAlt className="showcase-link__icon" />
+        <FaExternalLinkSquareAlt className="image-link__icon" />
 
-        <span className="showcase-link__text u-centered">Site Demo</span>
+        <span className="image-link__text u-centered">Site Demo</span>
       </a>
     </div>
 
     <p className="case-study__text">
+      <h3 className="case-study__title case-study__sub-title">
+        I am an h3 heading, this is how i look
+      </h3>
       Multiple named cell tokens within and between rows create a single named
       grid area that spans the corresponding grid cells. Unless those cells form
       a rectangle, the declaration is invalid.
