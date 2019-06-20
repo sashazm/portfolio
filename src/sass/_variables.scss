@@ -25,11 +25,10 @@ $bp-min: 360px;
 // Layout
 $social: 75px;
 $social-desktop: 100px;
-//at this width image slogan stays visible when menu is open
 $sidebar-width: 360px;
 $menu-width: $sidebar-width - $social;
-// 25px are removed because $social is replaced with $social-big
 $menu-width-desktop: $sidebar-width - $social-desktop;
-$margin-closed: -285px;
-// 25px are removed because $social is replaced with $social-big
-$margin-closed-big: -260px;
+
+// Main Image widths
+$main-image-big: 350px;
+$main-image-max: 600px;

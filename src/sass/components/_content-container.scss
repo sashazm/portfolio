@@ -1,21 +1,22 @@
 .content-container {
   height: 100%;
-  // grid-template-columns: [content] 1fr;
-  // grid-template-rows: 1fr;
   display: grid;
   grid-template-columns: [content] 1fr;
   margin-left: $social;
-  background-color: green;
   transition: transform 0.3s ease;
 
   @include breakpoint($bp-medium) {
-    grid-template-rows: [image] 400px [content] 1fr;
     grid-template-columns: [content] 1fr;
+    grid-template-rows: [image] 400px [content] 1fr;
     margin-left: $social-desktop;
   }
 
   @include breakpoint($bp-big) {
-    grid-template-columns: [content] 1fr [image] 40%;
-    grid-template-rows: 100vh;
+    grid-template-columns: [content] 1fr [image] $main-image-big;
+    grid-template-rows: 1fr;
+  }
+
+  @include breakpoint($bp-max) {
+    grid-template-columns: [content] 1fr [image] $main-image-max;
   }
 }

@@ -4,9 +4,6 @@
   @include breakpoint($bp-medium) {
     display: block;
     grid-row: image;
-
-    // width: 100vw;
-    // margin: 0 0 0 $social-desktop;
     background-image: url("../images/creativity-tablet.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,17 +14,18 @@
     grid-column: image;
     grid-row: 1;
     z-index: 2;
-    // position: fixed;
-    // top: 0;
-    // right: 0;
-    // width: 40%;
+    position: fixed;
+    top: 0;
+    right: 0;
     height: 100vh;
     background-image: url("../images/creativity-narrow.png");
+    width: $main-image-big;
   }
 
-  @include breakpoint(1450px) {
+  @include breakpoint($bp-max) {
     background-image: url("../images/creativity-desktop.png");
-    background-position: top center;
+    background-position: top right;
+    width: $main-image-max;
   }
 
   // Title
@@ -57,7 +55,7 @@
       width: 70%;
     }
 
-    @include breakpoint(1450px) {
+    @include breakpoint($bp-max) {
       @include u-visually-hidden();
     }
 

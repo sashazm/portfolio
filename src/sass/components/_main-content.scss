@@ -1,12 +1,8 @@
 .content {
-  grid-column: content;
-  // height: 100%;
   display: grid;
-  // grid-template-rows: 1fr;
-
-  // grid-row: content;
-  background-color: #fff;
+  // background-color: #fff;
   padding: 0 5vw;
   margin-top: 0;
-  // width: auto;
+  width: auto;
+  padding-bottom: 4rem;
 }
