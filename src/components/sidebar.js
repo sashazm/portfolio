@@ -1,11 +1,29 @@
-import React from "react"
+import React, { Component } from "react"
 import Menu from "../components/menu"
 import MediaLinks from "../components/media-links"
 
 class Sidebar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      //menu is closed by default
+      MenuOpen: false,
+    }
+  }
+
+  // on click change state to opposite of what it was. this is the close/open menu switch.
+  toggleMenu = () => {
+    this.setState({
+      MenuOpen: !this.state.MenuOpen,
+    })
+  }
+
   render() {
-    const classMenuActive = this.props.classMenuActive
-    const classToggleActive = this.props.classToggleActive
+    //  // create a css class for the hamburger button if the menu state is true, this will slide menu out
+    const classMenuActive = this.state.MenuOpen ? "is-open" : ""
+    // apply "X" icon to nav toggle when menu is open
+    const classToggleActive = this.state.MenuOpen ? "nav-toggle--active" : ""
+
     return (
       <div className={`sidebar ${classMenuActive}`}>
         <section className="sidebar__nav" tabIndex="0">
@@ -34,7 +52,7 @@ class Sidebar extends React.Component {
           {/* when button is clicked fire up a toggleMenu method */}
           <button
             className={`nav-toggle nav-icon ${classToggleActive}`}
-            onClick={this.props.toggleMenu}
+            onClick={this.toggleMenu}
           >
             <span className="nav-toggle__icon" />
           </button>
