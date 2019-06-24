@@ -36,7 +36,7 @@ const Intro = ({ data }) => {
       <header className="intro">
         <div className="intro__photo"></div>
         {/* title for the component */}
-        <h1 className="intro__title">
+        <h1 id="about" className="intro__title">
           Sasha
           <span className="intro__title--alt">Miller</span>
         </h1>

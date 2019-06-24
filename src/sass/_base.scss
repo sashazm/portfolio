@@ -22,11 +22,6 @@ body {
   line-height: 1.6;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   cursor: pointer;
   text-decoration: none;
@@ -37,6 +32,12 @@ a {
   padding: 1rem 0;
   position: relative;
   transition: 0.5s;
+}
+
+.inline-link {
+  text-decoration: underline;
+  color: $black;
+  font-weight: 400;
 }
 
 .l-container {
@@ -73,4 +74,26 @@ a {
   position: absolute;
   width: 1px;
   white-space: nowrap; // 1
+}
+
+// Section Titles
+.section-title {
+  font-family: $font-family-main--alt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+
+  @include breakpoint($bp-medium) {
+    font-size: 1rem;
+  }
+
+  &--alt {
+    font-family: $font-family-main--alt;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $raspberry;
+  }
 }

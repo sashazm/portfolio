@@ -1,0 +1,31 @@
+.project {
+  &__container {
+    margin-top: -2rem;
+  }
+
+  &__title {
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    color: $gray;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+
+    @include breakpoint($bp-medium) {
+      flex-direction: row;
+      // font-size: initial;
+    }
+
+    &__single {
+      margin: 0 1.5rem;
+
+      &--alt {
+        color: $raspberry;
+      }
+    }
+  }
+}

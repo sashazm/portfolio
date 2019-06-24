@@ -1,27 +1,9 @@
 $button-border: 1.5px solid #302f2d;
+// checkmark color
+$green: #005544;
 .case-study {
-  &__title {
-    font-family: $font-family-main--alt;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $black;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin: 0;
-
-    @include breakpoint($bp-medium) {
-      font-size: 1rem;
-    }
-  }
-
-  &__sub-title--alt {
-    font-family: $font-family-main--alt;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: $raspberry;
-  }
   // Akame project name
-  &__title-big {
+  &__title--big {
     font-family: $montserrat;
     letter-spacing: initial;
     color: $gray;
@@ -34,34 +16,36 @@ $button-border: 1.5px solid #302f2d;
       margin-bottom: 3rem;
     }
   }
+  &__title-icon {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: $pacific-blue;
+  }
+
+  &__title-text {
+    display: inline;
+  }
+
+  &__goal--initial {
+    display: grid;
+    @include breakpoint(740px) {
+      // grid-template-areas: "text image";
+    }
+  }
+
   // Grid for the image and link
   &__image-container {
     display: grid;
     width: 80%;
     grid-template-rows: 1fr min-content;
     height: auto;
-
     box-shadow: 0 6px 10px 0 #666;
-    margin-bottom: 3rem;
-
+    margin: 2rem 0 3rem;
     z-index: 2;
 
-    @include breakpoint(800px) {
-      grid-template-rows: 1fr min-content;
-      width: 30vw;
-      float: right;
-      margin: 0 1rem 1rem;
-    }
-
-    @include breakpoint($bp-big) {
-      width: 60%;
-      float: none;
-    }
-
-    @include breakpoint(1600px) {
-      float: right;
-      margin: 0 1rem 1rem;
-      width: 20vw;
+    @include breakpoint(740px) {
+      width: 400px;
+      // margin-left: 1rem;
     }
 
     // Case study image
@@ -97,7 +81,6 @@ $button-border: 1.5px solid #302f2d;
   padding-left: 0.2rem;
   border: $button-border;
   background-color: #4e4d48;
-
   height: 2rem;
 
   @include breakpoint(450px) {
