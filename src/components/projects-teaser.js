@@ -29,6 +29,13 @@ const ProjectsTeaser = () => (
             Little Prince
           </a>
         </h2>
+        <p>
+          This tribute page is a project for front end design certification.
+          While fully meeting it's original requirements, it also features some
+          "extra" touches to delight a visitor, custom animation takes a book's
+          original drawing and brings it to life and a quote generator brings a
+          touch of interactivity.
+        </p>
         <div>
           <ul className="project-links">
             <li className="project-links__single project-links__single--alt">
