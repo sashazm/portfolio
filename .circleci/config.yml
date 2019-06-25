@@ -28,10 +28,19 @@ jobs:
 
       - save_cache:
           paths:
-            - node_modules
+            - ~/.npm
+            - ~/.cache
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # Build site!
       - run:
           name: Build the portfolio with the Gatsby
           command: npm run build
+
+      - run:
+          name: Serve the portfolio site
+          command: npm run serve
+
+      - run:
+          name: Run end to end tests with Cypress
+          command: npm run e2e
