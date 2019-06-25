@@ -29,6 +29,7 @@
     "typeface-saira-extra-condensed": "0.0.72"
   },
   "devDependencies": {
+    "cypress": "^3.3.1",
     "prettier": "^1.18.0"
   },
   "keywords": [
@@ -41,7 +42,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "e2e": "cypress open"
   },
   "repository": {
     "type": "git",
