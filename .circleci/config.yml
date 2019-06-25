@@ -35,5 +35,5 @@ jobs:
 
       # Build site!
       - run:
-          name: Build the portfolio with Gatsby
+          name: Build the portfolio with the Gatsby
           command: npm run build
