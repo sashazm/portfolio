@@ -43,7 +43,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "e2e": "cypress open"
+    "e2e": "cypress open",
+    "e2e:ci": "cypress run --config baseUrl=http://localhost:9000"
   },
   "repository": {
     "type": "git",

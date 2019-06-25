@@ -40,7 +40,8 @@ jobs:
       - run:
           name: Serve the portfolio site
           command: npm run serve
+          background: true
 
       - run:
           name: Run end to end tests with Cypress
-          command: npm run e2e
+          command: npm run e2e:ci
