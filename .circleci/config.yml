@@ -24,7 +24,9 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: npm ci
+      - run:
+          name: Install node dependencies
+          command: npm ci
 
       - save_cache:
           paths:
@@ -34,11 +36,11 @@ jobs:
 
       # Build site!
       - run:
-          name: Build the portfolio with the Gatsby
+          name: Build the site with the Gatsby
           command: npm run build
 
       - run:
-          name: Serve the portfolio site
+          name: Serve the site
           command: npm run serve
           background: true
 
