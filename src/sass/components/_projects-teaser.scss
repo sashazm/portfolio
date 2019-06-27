@@ -3,9 +3,6 @@
     margin-top: -2rem;
   }
 
-  &__title {
-  }
-
   &-links {
     display: flex;
     flex-direction: column;
@@ -14,10 +11,10 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 0.7rem;
+    padding-left: 0;
 
     @include breakpoint($bp-medium) {
       flex-direction: row;
-      // font-size: initial;
     }
 
     &__single {
