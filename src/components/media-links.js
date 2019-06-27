@@ -10,7 +10,11 @@ import {
 
 const MediaLinks = () => (
   <>
-    <a href="/" className="nav-icon nav-link" aria-label="Contact me">
+    <a
+      href="mailto:sashazm85@gmail.com"
+      className="nav-icon nav-link"
+      aria-label="Contact me"
+    >
       <FaAt />
     </a>
     <a

@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
               Sasha<span className="sidebar__nav-title--alt">Miller</span>
             </h1>
             <p className="sidebar__nav-description">
-              I'm a multilingual Web Developer, based in Sacramento area.
+              I am a multilingual Web Developer, based in California.
             </p>
           </div>
 

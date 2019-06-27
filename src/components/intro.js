@@ -55,17 +55,16 @@ const Intro = ({ data }) => {
         <div className="intro__photo intro__photo--desktop"></div>
         {/* photo */}
         <p className="intro__text">
-          Front End Web Developer, living in Lodi, California. I am relentlessly
-          pursuing a career in web-design and development and my goal is to work
-          in a place that encourages personal growth and offers practical
-          experience in current web technologies. In particular, I am interested
-          in learning Drupal9 and gaining more experience with D8.
+          I am a Front-End developer living in California with a focus on using
+          semantic markup and scalable CSS and JavaScript to build highly
+          performant and responsive websites. I specialize in turning design
+          concepts into working themes in Drupal, Wordpress, and React.
         </p>
 
         <div className="content-divider content-divider--contact">
           <FaCommentAlt className="content-divider__icon content-divider__icon--contact" />
           <a
-            href="/"
+            href="mailto:sashazm85@gmail.com"
             className="content-divider__text content-divider__text--contact"
           >
             Contact Me
