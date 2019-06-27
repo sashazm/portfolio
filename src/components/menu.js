@@ -1,7 +1,6 @@
-import PropTypes from "prop-types"
 import React from "react"
 
-const Menu = ({}) => (
+const Menu = () => (
   <ul className="menu u-centered menu--active">
     <li className="menu__item">
       <a href="#about" className="current menu__link nav-link">

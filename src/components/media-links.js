@@ -22,6 +22,7 @@ const MediaLinks = () => (
       className="nav-icon nav-link"
       title="My code on Github"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <FaGithub />
     </a>
@@ -30,6 +31,7 @@ const MediaLinks = () => (
       className="nav-icon nav-link"
       title="Drupal profile"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <FaDrupal />
     </a>
@@ -38,6 +40,7 @@ const MediaLinks = () => (
       className="nav-icon nav-link"
       title="CodePen profile"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <FaCodepen />
     </a>
@@ -46,6 +49,7 @@ const MediaLinks = () => (
       className="nav-icon nav-link"
       title="Free Code Camp profile"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <FaFreeCodeCamp />
     </a>

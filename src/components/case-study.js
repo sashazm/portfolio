@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -23,7 +22,11 @@ const CaseStudy = () => (
           <p className="case-study__title-text">
             Simulate being provided a concept from a designer by taking
             screenshots from premade template
-            <a href="https://colorlib.com/wp/template/akame/" target="_blank">
+            <a
+              href="https://colorlib.com/wp/template/akame/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="inline-link">
                 {" "}
                 https://colorlib.com/wp/template/akame/{" "}
@@ -64,6 +67,7 @@ const CaseStudy = () => (
           <a
             href="https://salon-demo.netlify.com"
             target="_blank"
+            rel="noopener noreferrer"
             title="Akame demo on Netlify"
             className="image-link"
           >

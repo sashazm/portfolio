@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import ReactTextRotator from "react-text-rotator"
 import { FaCommentAlt } from "react-icons/fa"

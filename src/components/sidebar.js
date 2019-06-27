@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Menu from "../components/menu"
 import MediaLinks from "../components/media-links"
 

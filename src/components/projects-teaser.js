@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 
 const ProjectsTeaser = () => (
@@ -11,6 +10,8 @@ const ProjectsTeaser = () => (
         <h2>
           <a
             href="https://github.com/sashazm/MagnifAscent-d8Exersize"
+            target="_blank"
+            rel="noopener noreferrer"
             className="project__title"
           >
             MagnifAscent
@@ -41,6 +42,7 @@ const ProjectsTeaser = () => (
           <a
             href="https://codepen.io/sashazm/pen/wLerLw"
             target="_blank"
+            rel="noopener noreferrer"
             className="project__title"
           >
             Little Prince
