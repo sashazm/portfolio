@@ -13,7 +13,7 @@ const ProjectsTeaser = () => (
         href="https://github.com/sashazm/MagnifAscent-d8Exersize"
         target="_blank"
         rel="noopener noreferrer"
-        className="project__link"
+        className="project__button"
       >
         view code
       </a>
@@ -42,7 +42,7 @@ const ProjectsTeaser = () => (
         href="https://codepen.io/sashazm/pen/wLerLw"
         target="_blank"
         rel="noopener noreferrer"
-        className="project__link"
+        className="project__button"
       >
         view code
       </a>
