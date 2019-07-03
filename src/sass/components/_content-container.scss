@@ -7,7 +7,7 @@
 
   @include breakpoint($bp-medium) {
     grid-template-columns: [content] 1fr;
-    grid-template-rows: [image] 400px [content] 1fr;
+    grid-template-rows: [image] $main-image-height-tablet [content] 1fr;
     margin-left: $social-desktop;
   }
 

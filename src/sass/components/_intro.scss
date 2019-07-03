@@ -14,10 +14,15 @@
 
     @include breakpoint($bp-medium) {
       font-size: 2.3rem;
-      text-align: start;
+      position: absolute;
+      // positioning name below image banner
+      top: $main-image-height-tablet;
+      margin-left: 12rem;
     }
 
     @include breakpoint($bp-big) {
+      position: initial;
+      text-align: start;
       padding: auto;
       margin: auto;
       font-size: 4rem;
@@ -49,8 +54,7 @@
       display: none;
       @include breakpoint($bp-big) {
         display: inline-block;
-        // transform bubbles down to --desktop
-        // had to be reset
+        // reset  transform: translateY(-50%)
         transform: translateY(0);
         margin: 1rem 1rem 0 0;
         padding: 2rem;
@@ -62,24 +66,24 @@
 
   &__greeting {
     height: 2.5rem;
-    margin: 0;
 
     &-rotator {
       font-size: 1rem;
       color: #0d3c55;
+      margin: 0;
     }
 
     @include breakpoint($bp-medium) {
       height: auto;
-      margin-top: 3rem;
+      margin-top: -2rem;
     }
     @include breakpoint($bp-big) {
-      margin-top: -1rem;
+      margin: -0.5rem auto 0;
     }
   }
 
   &__text {
-    margin: 1.5rem auto;
+    margin: 0.5rem auto 1.5rem;
 
     @include breakpoint($bp-medium) {
       margin: 1rem auto;
