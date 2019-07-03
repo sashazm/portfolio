@@ -34,6 +34,17 @@ $button-border: 1.5px solid #302f2d;
     box-shadow: 0 6px 10px 0 #666;
     margin: 2rem 0 3rem;
     z-index: 2;
+    &:hover {
+      .image-link {
+        box-shadow: 0 6px 14px 0 #666;
+        background-color: #808080;
+      }
+
+      // icon rotation
+      .image-link__icon {
+        transform: rotateZ(45deg);
+      }
+    }
 
     @include breakpoint(740px) {
       width: 400px;
@@ -83,15 +94,6 @@ $button-border: 1.5px solid #302f2d;
   @include breakpoint($bp-medium) {
     // height: 3rem;
     padding-left: 0.5rem;
-  }
-
-  &:hover {
-    box-shadow: 0 6px 14px 0 #666;
-    background-color: #808080;
-    // icon rotation
-    .image-link__icon {
-      transform: rotateZ(45deg);
-    }
   }
   // link text
   &__text {

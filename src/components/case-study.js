@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import { FaExternalLinkSquareAlt, FaCheck } from "react-icons/fa"
 
 const CaseStudy = () => (
-  <section id="projects" className="project">
+  <section id="projects">
     <hr className="line" />
     <header>
       <h1 className="section-title section-title--alt">Case Study</h1>
@@ -57,20 +57,20 @@ const CaseStudy = () => (
       <p className="u-inline">Highly maintainable and portable code.</p>
 
       {/* Demo Link */}
-      <div className="case-study__image-container">
+      <a
+        className="case-study__image-container"
+        href="https://salon-demo.netlify.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Akame demo on Netlify"
+      >
         <AkameBackground />
-        <a
-          href="https://salon-demo.netlify.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Akame demo on Netlify"
-          className="image-link"
-        >
+        <div className="image-link">
           <FaExternalLinkSquareAlt className="image-link__icon" />
 
           <span className="image-link__text u-centered">Result Demo</span>
-        </a>
-      </div>
+        </div>
+      </a>
       <hr />
 
       {/* Going further */}
