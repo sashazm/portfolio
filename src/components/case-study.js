@@ -51,10 +51,10 @@ const CaseStudy = () => (
 
       {/* Result */}
 
-      <h3 class="u-inline">
+      <h3 className="u-inline">
         <FaCheck className="case-study__title-icon" /> Result:{" "}
       </h3>
-      <p class="u-inline">Highly maintainable and portable code.</p>
+      <p className="u-inline">Highly maintainable and portable code.</p>
 
       {/* Demo Link */}
       <div className="case-study__image-container">
@@ -74,16 +74,14 @@ const CaseStudy = () => (
       <hr />
 
       {/* Going further */}
-      <p>
-        <strong>Going further: </strong>
-      </p>
+      <h3>Going further:</h3>
       <p className="case-study__title-text">
         Simulate porting existing code as custom themes into Drupal, Wordpress,
         and Gatsby.js
       </p>
-      <p>
-        <strong>Development strategy: </strong>
-      </p>
+
+      {/* Going further */}
+      <h3>Development strategy:</h3>
       <ul className="case-study__list">
         {/* Akame Drupal */}
         <li className="case-study__list-item">
@@ -100,16 +98,15 @@ const CaseStudy = () => (
           Gatsby.js: used individual React components.
         </li>
       </ul>
-      <p>
-        <strong>
-          <FaCheck className="case-study__title-icon" /> Result:{" "}
-        </strong>
+
+      <h3 className="u-inline">
+        <FaCheck className="case-study__title-icon" /> Result:{" "}
+      </h3>
+      <p className="u-inline">
         Refactored code that works natively within each system.
       </p>
 
-      <p>
-        <strong>Conclusion: </strong>
-      </p>
+      <h3>Conclusion:</h3>
     </article>
   </section>
 )
