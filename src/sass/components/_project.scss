@@ -1,12 +1,32 @@
-.project__title {
-  display: block;
-  font-size: 2rem;
-  padding-top: 4rem;
-  color: #002c23;
-}
+.project {
+  margin-bottom: 3rem;
 
-.project__title--alt {
-  /* color: #a81f3d; */
-  color: #164450;
-  font-size: 1.5rem;
+  &__title {
+    display: block;
+    font-size: 2rem;
+    color: #002c23;
+  }
+
+  &__link {
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: column;
+    color: $gray;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    padding-left: 0;
+
+    @include breakpoint($bp-medium) {
+      flex-direction: row;
+    }
+  }
+
+  &__tag {
+    margin: 0 1.5rem;
+    color: $raspberry;
+  }
 }
