@@ -76,6 +76,10 @@ a {
   white-space: nowrap; // 1
 }
 
+.u-inline {
+  display: inline;
+}
+
 // Section Titles
 .section-title {
   font-family: $font-family-main--alt;

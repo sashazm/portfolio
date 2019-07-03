@@ -26,7 +26,7 @@ $button-border: 1.5px solid #302f2d;
   }
 
   &__goal--initial {
-    display: grid;
+    // display: grid;
     @include breakpoint(740px) {
       // grid-template-areas: "text image";
     }
