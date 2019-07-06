@@ -9,11 +9,14 @@ const ProjectsTeaser = () => (
     </header>
     <article className="project">
       {/* <!-- Single Portfolio Link --> */}
-      <h2 className="project__title u-inline">MagnifAscent</h2>
-      <CodeButton
-        href="https://github.com/sashazm/MagnifAscent-d8Exersize"
-        className="project__button"
-      />
+      <div className="project__title-wrapper">
+        <CodeButton
+          href="https://github.com/sashazm/MagnifAscent-d8Exersize"
+          className="project__button"
+        />
+        <h2 className="project__title u-inline">MagnifAscent</h2>
+      </div>
+
       <p>
         This is a Drupal 8 implementation of Build-A-Module site builder course
         for Drupal 7. While completing a course I received additional training,
@@ -34,11 +37,13 @@ const ProjectsTeaser = () => (
 
     <article className="project">
       {/* <!-- Single Portfolio Link --> */}
-      <h2 className="project__title u-inline">Little Prince</h2>
-      <CodeButton
-        href="https://codepen.io/sashazm/pen/wLerLw"
-        className="project__button"
-      />
+      <div className="project__title-wrapper">
+        <CodeButton
+          href="https://codepen.io/sashazm/pen/wLerLw"
+          className="project__button"
+        />
+        <h2 className="project__title u-inline">Little Prince</h2>
+      </div>
       <p>
         This tribute page is a project for Responsive Web Design Certification
         from FreeCodeCamp. While fully meeting it's original requirements, it

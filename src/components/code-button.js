@@ -1,5 +1,4 @@
 import React from "react"
-import { FaExternalLinkSquareAlt } from "react-icons/fa"
 
 const CodeButton = props => {
   const href = props.href
@@ -12,7 +11,6 @@ const CodeButton = props => {
       className={`code-button u-inline ${myClassName}`}
     >
       <span className="code-button--upper">view</span>code
-      <FaExternalLinkSquareAlt className="external-link-icon" />
     </a>
   )
 }

@@ -1,13 +1,19 @@
 .project {
   margin-bottom: 3rem;
 
+  .project__title-wrapper {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+
   &__title {
     font-size: 2rem;
     color: #002c23;
   }
 
   &__button {
-    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   &__tags {
