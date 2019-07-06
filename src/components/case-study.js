@@ -71,7 +71,6 @@ const CaseStudy = () => (
           <span className="image-link__text u-centered">Result Demo</span>
         </div>
       </a>
-      <hr />
 
       {/* Going further */}
       <h3>Going further:</h3>
