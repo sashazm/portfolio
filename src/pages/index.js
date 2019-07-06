@@ -6,6 +6,7 @@ import Intro from "../components/intro"
 import CaseStudy from "../components/case-study"
 import "typeface-montserrat"
 import ProjectsTeaser from "../components/projects-teaser"
+import ContactInfo from "../components/contact-info"
 // Load Saira Extra Condensed typeface
 require("typeface-saira-extra-condensed")
 
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Intro />
     <CaseStudy />
     <ProjectsTeaser />
+    <ContactInfo />
   </Layout>
 )
 
