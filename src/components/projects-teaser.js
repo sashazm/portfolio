@@ -1,4 +1,5 @@
 import React from "react"
+import CodeButton from "../components/code-button"
 
 const ProjectsTeaser = () => (
   <section>
@@ -8,15 +9,11 @@ const ProjectsTeaser = () => (
     </header>
     <article className="project">
       {/* <!-- Single Portfolio Link --> */}
-      <h2 className="project__title">MagnifAscent</h2>
-      <a
+      <h2 className="project__title u-inline">MagnifAscent</h2>
+      <CodeButton
         href="https://github.com/sashazm/MagnifAscent-d8Exersize"
-        target="_blank"
-        rel="noopener noreferrer"
         className="project__button"
-      >
-        view code
-      </a>
+      />
       <p>
         This is a Drupal 8 implementation of Build-A-Module site builder course
         for Drupal 7. While completing a course I received additional training,
@@ -37,16 +34,11 @@ const ProjectsTeaser = () => (
 
     <article className="project">
       {/* <!-- Single Portfolio Link --> */}
-      <h2 className="project__title">Little Prince</h2>
-      <a
+      <h2 className="project__title u-inline">Little Prince</h2>
+      <CodeButton
         href="https://codepen.io/sashazm/pen/wLerLw"
-        target="_blank"
-        rel="noopener noreferrer"
         className="project__button"
-      >
-        view code
-      </a>
-
+      />
       <p>
         This tribute page is a project for Responsive Web Design Certification
         from FreeCodeCamp. While fully meeting it's original requirements, it

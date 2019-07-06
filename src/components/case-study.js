@@ -66,7 +66,7 @@ const CaseStudy = () => (
       >
         <AkameBackground />
         <div className="image-link">
-          <FaExternalLinkSquareAlt className="image-link__icon" />
+          <FaExternalLinkSquareAlt className="image-link__icon external-link-icon" />
 
           <span className="image-link__text u-centered">Result Demo</span>
         </div>

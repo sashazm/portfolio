@@ -1,0 +1,32 @@
+.code-button {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  color: $black;
+  border: 4px solid $raspberry;
+  font-weight: 600;
+  z-index: 1;
+  // background-image: radial-gradient(#0f5b78 0%, #0d3c55 100%);
+  &--upper {
+    // border-bottom: 1px solid $raspberry;
+    margin-bottom: -0.3rem;
+  }
+
+  &:hover {
+    // icon rotation
+    .external-link-icon {
+      transform: rotateZ(45deg) scale(1.8) translate(100%, -80%);
+    }
+  }
+
+  .external-link-icon {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: -1;
+    background-color: $light-blue;
+    color: $gray;
+    opacity: 0.5;
+  }
+}
