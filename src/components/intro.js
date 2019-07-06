@@ -65,7 +65,7 @@ const Intro = ({ data }) => {
       <div className="content-divider content-divider--contact">
         <FaCommentAlt className="content-divider__icon content-divider__icon--contact" />
         <a
-          href="mailto:sashazm85@gmail.com"
+          href="#contact-info"
           className="content-divider__text content-divider__text--contact"
         >
           Contact Me

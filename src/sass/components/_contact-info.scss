@@ -1,41 +1,90 @@
+$border-inner: 0.9rem;
+$border-inner--big: 1.5rem;
+$border-outer: 0.5rem;
+$border-outer--big: 1rem;
+
 .contact-info {
-  background-color: $dark-blue;
-  color: $white;
-  padding: 5rem 4rem 4rem;
+  position: relative;
+  width: 100%;
+  height: auto;
   margin: 0;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  position: relative;
-  justify-content: center;
+  color: $white;
+  background-color: $dark-blue;
+
+  @include breakpoint($bp-medium) {
+    // padding: 5rem 4rem;
+  }
 
   &::before {
     content: " ";
     position: absolute;
-    border: 3px solid #3a2100;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
+    top: $border-outer;
+    right: $border-outer;
+    bottom: $border-outer;
+    left: $border-outer;
+    border: 3px solid $pacific-blue;
+
+    @include breakpoint($bp-medium) {
+      top: $border-outer--big;
+      right: $border-outer--big;
+      bottom: $border-outer--big;
+      left: $border-outer--big;
+    }
   }
 
   &::after {
     content: " ";
     position: absolute;
-    border: 1px solid #3a2100;
-    top: 1.5rem;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    left: 1.5rem;
+    top: $border-inner;
+    right: $border-inner;
+    bottom: $border-inner;
+    left: $border-inner;
+    border: 1px solid $pacific-blue;
+
+    @include breakpoint($bp-medium) {
+      top: $border-inner--big;
+      right: $border-inner--big;
+      bottom: $border-inner--big;
+      left: $border-inner--big;
+    }
   }
 
+  // Email adress
   &__email {
-    font-size: 2rem;
-    color: #eac743;
+    font-size: 1.1rem;
+    color: $yellow;
 
+    @include breakpoint($bp-medium) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint($bp-big) {
+      font-size: 1.5rem;
+    }
+
+    @include breakpoint(1200px) {
+      font-size: 2rem;
+    }
+
+    // Contact me
     &--alt {
-      font-size: 1.3rem;
-      color: $white;
+      font-size: 0.9rem;
+
+      @include breakpoint($bp-medium) {
+        font-size: 1.3rem;
+      }
+
+      @include breakpoint($bp-big) {
+        font-size: 1rem;
+      }
+
+      @include breakpoint(1200px) {
+        font-size: 1.3rem;
+      }
     }
   }
 }
