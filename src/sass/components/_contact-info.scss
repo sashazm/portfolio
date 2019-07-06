@@ -57,6 +57,7 @@ $border-outer--big: 1rem;
   &__email {
     font-size: 1.1rem;
     color: $yellow;
+    z-index: 2;
 
     @include breakpoint($bp-medium) {
       font-size: 2rem;
@@ -73,6 +74,7 @@ $border-outer--big: 1rem;
     // Contact me
     &--alt {
       font-size: 0.9rem;
+      z-index: 2;
 
       @include breakpoint($bp-medium) {
         font-size: 1.3rem;

@@ -33,7 +33,7 @@ const Menu = () => (
       </div>
     </li>
     <li className="menu__item">
-      <a href="contact.html" className="menu__link nav-link">
+      <a href="#contact-info" className="menu__link nav-link">
         Contact
       </a>
       <div className="wave-container">
