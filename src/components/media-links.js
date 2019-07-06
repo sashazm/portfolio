@@ -13,7 +13,7 @@ const MediaLinks = () => (
     <a
       href="mailto:sashazm85@gmail.com"
       className="nav-icon nav-link"
-      aria-label="Contact me"
+      title="Write an email"
     >
       <FaAt />
     </a>
