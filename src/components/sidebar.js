@@ -5,9 +5,32 @@ import MediaLinks from "../components/media-links"
 class Sidebar extends React.Component {
   constructor(props) {
     super(props)
+    this.setWrapperRef = this.setWrapperRef.bind(this)
+    this.handleClickOutside = this.handleClickOutside.bind(this)
     this.state = {
       //menu is closed by default
       MenuOpen: false,
+    }
+  }
+  componentDidMount() {
+    document.addEventListener("mousedown", this.handleClickOutside)
+  }
+  componentWillUnmount() {
+    document.removeEventListener("mousedown", this.handleClickOutside)
+  }
+
+  /**
+   * Set the wrapper ref
+   */
+  setWrapperRef(node) {
+    this.wrapperRef = node
+  }
+
+  handleClickOutside(event) {
+    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+      this.setState({
+        MenuOpen: false,
+      })
     }
   }
 
@@ -25,7 +48,7 @@ class Sidebar extends React.Component {
     const classToggleActive = this.state.MenuOpen ? "nav-toggle--active" : ""
 
     return (
-      <div className={`sidebar ${classMenuActive}`}>
+      <div className={`sidebar ${classMenuActive}`} ref={this.setWrapperRef}>
         <section className="sidebar__nav" tabIndex="0">
           {/* <!-- Header Area Start--> */}
           <div>
