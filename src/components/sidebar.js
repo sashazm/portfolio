@@ -12,9 +12,20 @@ class Sidebar extends React.Component {
       MenuOpen: false,
     }
   }
+
+  // on click change state to opposite of what it was. this is the close/open menu switch.
+  toggleMenu = () => {
+    this.setState({
+      MenuOpen: !this.state.MenuOpen,
+    })
+  }
+
+  // menu will close on the click outside the sidebar component
+  // ====================================
   componentDidMount() {
     document.addEventListener("mousedown", this.handleClickOutside)
   }
+
   componentWillUnmount() {
     document.removeEventListener("mousedown", this.handleClickOutside)
   }
@@ -33,14 +44,7 @@ class Sidebar extends React.Component {
       })
     }
   }
-
-  // on click change state to opposite of what it was. this is the close/open menu switch.
-  toggleMenu = () => {
-    this.setState({
-      MenuOpen: !this.state.MenuOpen,
-    })
-  }
-
+  // ======================================
   render() {
     //  // create a css class for the hamburger button if the menu state is true, this will slide menu out
     const classMenuActive = this.state.MenuOpen ? "is-open" : ""
@@ -48,6 +52,7 @@ class Sidebar extends React.Component {
     const classToggleActive = this.state.MenuOpen ? "nav-toggle--active" : ""
 
     return (
+      // setWrapperRef to capture the click outside
       <div className={`sidebar ${classMenuActive}`} ref={this.setWrapperRef}>
         <section className="sidebar__nav" tabIndex="0">
           {/* <!-- Header Area Start--> */}
