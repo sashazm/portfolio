@@ -8,12 +8,20 @@
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #002c23;
+
+    @include breakpoint($bp-medium) {
+      font-size: 2rem;
+    }
   }
 
   &__button {
-    margin-right: 2rem;
+    margin-right: 1rem;
+
+    @include breakpoint($bp-medium) {
+      margin-right: 2rem;
+    }
   }
 
   &__tags {
