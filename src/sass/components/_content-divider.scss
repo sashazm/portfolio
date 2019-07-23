@@ -2,9 +2,14 @@ $case-study: 5rem;
 $case-study-tablet: 8rem;
 
 .content-divider {
+  @include content-divider($yellow);
   &--contact {
-    @include content-divider($yellow);
     margin-top: 5rem;
+  }
+
+  &--not-found {
+    margin-top: 10rem;
+    height: 5rem;
   }
 }
 
@@ -16,16 +21,18 @@ $case-study-tablet: 8rem;
   z-index: 2;
   justify-content: center;
   height: 1.5rem;
+  color: $darkest-blue;
 
-  @include breakpoint($bp-medium) {
-    font-size: 3rem;
-    height: 2.5rem;
-    top: -1.5rem;
+  &--not-found {
+    font-size: 4rem;
+    top: -4rem;
   }
+}
 
-  &--contact {
-    color: $darkest-blue;
-  }
+@include breakpoint($bp-medium) {
+  font-size: 3rem;
+  height: 2.5rem;
+  top: -1.5rem;
 }
 
 .content-divider__icon {
