@@ -105,7 +105,7 @@ const CaseStudy = () => (
         Refactored code that works natively within each system.
       </p>
 
-      <h3>Conclusion:</h3>
+      {/* <h3>Conclusion:</h3> */}
     </article>
   </section>
 )
