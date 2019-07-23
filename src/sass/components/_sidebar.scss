@@ -41,6 +41,8 @@
 }
 
 .sidebar__social {
+  position: fixed;
+  left: 0;
   grid-column: social;
   height: 100%;
   background-image: radial-gradient($dark-blue 0%, $darkest-blue 100%);
