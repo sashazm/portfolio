@@ -54,7 +54,12 @@ const MediaLinks = () => (
     >
       <FaFreeCodeCamp />
     </a>
-    <a href={resume} className="nav-icon nav-link" aria-label="Print resume">
+    <a
+      href={resume}
+      className="nav-icon nav-link"
+      aria-label="Print resume"
+      title="Print Resume"
+    >
       <FaPrint />
     </a>
   </>

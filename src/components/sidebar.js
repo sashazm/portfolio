@@ -51,6 +51,7 @@ class Sidebar extends React.Component {
     // apply "X" icon to nav toggle when menu is open
     const classToggleActive = this.state.MenuOpen ? "nav-toggle--active" : ""
 
+    const toggleTitle = this.state.MenuOpen ? "Close menu" : "Open menu"
     return (
       // setWrapperRef to capture the click outside
       <div className={`sidebar ${classMenuActive}`} ref={this.setWrapperRef}>
@@ -81,6 +82,7 @@ class Sidebar extends React.Component {
           <button
             className={`nav-toggle nav-icon ${classToggleActive}`}
             onClick={this.toggleMenu}
+            title={toggleTitle}
           >
             <span className="nav-toggle__icon" />
           </button>
