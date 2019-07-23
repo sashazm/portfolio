@@ -10,6 +10,7 @@ $max_font: 20px;
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  overflow-x: hidden;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+
   line-height: 1.6;
 }
 
