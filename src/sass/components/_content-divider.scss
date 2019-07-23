@@ -8,8 +8,18 @@ $case-study-tablet: 8rem;
   }
 
   &--not-found {
-    margin-top: 10rem;
-    height: 5rem;
+    margin-top: 4rem;
+    height: 6rem;
+    width: 100%;
+    @include breakpoint($bp-medium) {
+      margin-top: 5rem;
+      height: 4rem;
+    }
+
+    &:after {
+      width: 80%;
+      height: 3.7rem;
+    }
   }
 }
 
