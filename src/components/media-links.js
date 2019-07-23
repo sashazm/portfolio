@@ -7,6 +7,7 @@ import {
   FaFreeCodeCamp,
   FaPrint,
 } from "react-icons/fa"
+import resume from "../files/sasha_miller_resume.pdf"
 
 const MediaLinks = () => (
   <>
@@ -53,7 +54,7 @@ const MediaLinks = () => (
     >
       <FaFreeCodeCamp />
     </a>
-    <a href="/" className="nav-icon nav-link" aria-label="Print resume">
+    <a href={resume} className="nav-icon nav-link" aria-label="Print resume">
       <FaPrint />
     </a>
   </>
