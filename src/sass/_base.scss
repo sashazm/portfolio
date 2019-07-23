@@ -19,7 +19,6 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-
   line-height: 1.6;
 }
 
@@ -43,6 +42,7 @@ p {
   text-decoration: underline;
   color: $black;
   font-weight: 400;
+  word-break: break-all;
 }
 
 .l-container {
