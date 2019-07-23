@@ -50,7 +50,7 @@ class Sidebar extends React.Component {
     const classMenuActive = this.state.MenuOpen ? "is-open" : ""
     // apply "X" icon to nav toggle when menu is open
     const classToggleActive = this.state.MenuOpen ? "nav-toggle--active" : ""
-
+    // apply title to the button based on state
     const toggleTitle = this.state.MenuOpen ? "Close menu" : "Open menu"
     return (
       // setWrapperRef to capture the click outside
