@@ -24,7 +24,7 @@ const Intro = ({ data }) => {
 
     {
       text: `<?php
-      echo "Hello world!";
+      echo "Hello";
       ?>`,
       animation: "fade",
     },
