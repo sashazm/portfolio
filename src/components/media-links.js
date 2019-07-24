@@ -59,6 +59,8 @@ const MediaLinks = () => (
       className="nav-icon nav-link"
       aria-label="Print resume"
       title="Print Resume"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <FaPrint />
     </a>
