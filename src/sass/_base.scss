@@ -106,3 +106,15 @@ p {
     color: $raspberry;
   }
 }
+
+.link-highlighted {
+  background: linear-gradient(to bottom, $light-blue 0%, $light-blue 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  transition: background-size 0.2s;
+
+  &:hover {
+    background-size: 4px 50px;
+  }
+}

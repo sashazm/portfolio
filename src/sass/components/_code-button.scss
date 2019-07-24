@@ -1,6 +1,5 @@
 .code-button {
   display: inline-flex;
-
   flex-direction: column;
   height: min-content;
   padding: 0 0.5rem;
@@ -17,4 +16,8 @@
   &:hover {
     transform: scale(1.2);
   }
+}
+
+.code-button--alt {
+  color: $darkest-blue;
 }
