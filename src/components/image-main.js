@@ -14,6 +14,11 @@ const ImageMain = () => {
           having fun.
         </span>
       </p>
+      <span
+        className="featured-image--accessibility"
+        role="img"
+        aria-label="Creativity is intelligence having fun"
+      ></span>
     </div>
   )
 }

@@ -118,3 +118,10 @@ p {
     background-size: 4px 50px;
   }
 }
+
+.featured-image--accessibility {
+  display: none;
+  @include breakpoint($bp-max) {
+    display: inline;
+  }
+}

@@ -13,6 +13,7 @@ const ProjectsTeaser = () => (
         <CodeButton
           href="https://github.com/sashazm/MagnifAscent-d8Exersize"
           className="project__button"
+          title="View code on Github"
         />
         <h2 className="project__title u-inline">MagnifAscent</h2>
       </div>
@@ -41,6 +42,7 @@ const ProjectsTeaser = () => (
         <CodeButton
           href="https://codepen.io/sashazm/pen/wLerLw"
           className="project__button"
+          title="View code on CodePen"
         />
         <h2 className="project__title u-inline">Little Prince</h2>
       </div>
