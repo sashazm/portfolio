@@ -97,7 +97,7 @@ const CaseStudy = () => (
         {/* Akame Wordpress */}
         <li className="case-study__list-item">
           Wordpress: theme with multiple custom Gutenberg blocks built with
-          React.
+          React.{" "}
           <a
             href="https://github.com/sashazm/wp-akame"
             target="_blank"
@@ -110,7 +110,7 @@ const CaseStudy = () => (
 
         {/* Akame Guttenberg */}
         <li className="case-study__list-item">
-          Gatsby.js: used individual React components.
+          Gatsby.js: used individual React components.{" "}
           <a
             href="https://github.com/sashazm/gatsby-akame"
             target="_blank"
@@ -151,6 +151,7 @@ const AkameBackground = () => (
       <Img
         fluid={data.AkameBackground.childImageSharp.fluid}
         className="case-study__image"
+        alt="Screenshot of the Akame website, it is also a link to Netlify"
       />
     )}
   />
