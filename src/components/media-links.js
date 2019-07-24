@@ -37,7 +37,7 @@ const MediaLinks = () => (
       <FaDrupal />
     </a>
     <a
-      href="https://codepen.io/dashboard"
+      href="https://codepen.io/sashazm/pens/public"
       className="nav-icon nav-link"
       title="CodePen profile"
       target="_blank"
