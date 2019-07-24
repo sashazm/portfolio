@@ -5,6 +5,7 @@ import MediaLinks from "../components/media-links"
 class Sidebar extends React.Component {
   constructor(props) {
     super(props)
+    this.handleLinkClick = this.handleLinkClick.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this)
     this.state = {
@@ -17,6 +18,11 @@ class Sidebar extends React.Component {
   toggleMenu = () => {
     this.setState({
       MenuOpen: !this.state.MenuOpen,
+    })
+  }
+  handleLinkClick = () => {
+    this.setState({
+      MenuOpen: false,
     })
   }
 
@@ -52,6 +58,8 @@ class Sidebar extends React.Component {
     const classToggleActive = this.state.MenuOpen ? "nav-toggle--active" : ""
     // apply title to the button based on state
     const toggleTitle = this.state.MenuOpen ? "Close menu" : "Open menu"
+
+    const handleLinkClick = this.handleLinkClick
     return (
       // setWrapperRef to capture the click outside
       <div className={`sidebar ${classMenuActive}`} ref={this.setWrapperRef}>
@@ -68,7 +76,7 @@ class Sidebar extends React.Component {
 
           {/* <!-- Menu Links Start --> */}
           <nav>
-            <Menu />
+            <Menu handleLinkClick={handleLinkClick.bind(this)} />
           </nav>
           {/* <!-- Footer Area Start --> */}
           <footer>
