@@ -20,6 +20,8 @@ class Sidebar extends React.Component {
       MenuOpen: !this.state.MenuOpen,
     })
   }
+
+  // when menu link is clicked close the menu
   handleLinkClick = () => {
     this.setState({
       MenuOpen: false,
@@ -64,7 +66,7 @@ class Sidebar extends React.Component {
       // setWrapperRef to capture the click outside
       <div className={`sidebar ${classMenuActive}`} ref={this.setWrapperRef}>
         <section className="sidebar__nav" tabIndex="0">
-          {/* <!-- Header Area Start--> */}
+          {/* Header Area Start */}
           <div>
             <h1 className="sidebar__nav-title">
               Sasha<span className="sidebar__nav-title--alt">Miller</span>
@@ -74,17 +76,17 @@ class Sidebar extends React.Component {
             </p>
           </div>
 
-          {/* <!-- Menu Links Start --> */}
+          {/* Menu Links Start */}
           <nav>
             <Menu handleLinkClick={handleLinkClick.bind(this)} />
           </nav>
-          {/* <!-- Footer Area Start --> */}
+          {/* Footer Area Start */}
           <footer>
             <div className="sidebar__nav-footer">© 2018.</div>
           </footer>
         </section>
 
-        {/* <!-- Media Links Area Start--> */}
+        {/* Media Links Area Start */}
         <section className="sidebar__social u-centered">
           {/* when button is clicked fire up a toggleMenu method */}
           <button

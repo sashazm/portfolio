@@ -7,6 +7,8 @@ class Menu extends React.Component {
     return (
       <ul className="menu u-centered menu--active">
         <li className="menu__item">
+          {/* handleLinkClick is a callback function to updates
+           the Sidebar state which closes the menu */}
           <Link
             to="/#about"
             className="current menu__link nav-link"
@@ -21,12 +23,16 @@ class Menu extends React.Component {
           </div>
         </li>
         <li className="menu__item">
+          {/* handleLinkClick is a callback function to updates
+           the Sidebar state which closes the menu */}
           <Link
             to="/#projects"
             className="menu__link nav-link"
             onClick={this.props.handleLinkClick}
           >
             Projects
+            {/* handleLinkClick is a callback function to updates
+           the Sidebar state which closes the menu */}
           </Link>
           <div className="wave-container">
             <div className="wave"></div>
@@ -35,11 +41,14 @@ class Menu extends React.Component {
           </div>
         </li>
         <li className="menu__item">
+          {/* handleLinkClick is a callback function to updates
+           the Sidebar state which closes the menu */}
           <a
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
             className="menu__link nav-link"
+            onClick={this.props.handleLinkClick}
           >
             Resume
           </a>
@@ -50,12 +59,16 @@ class Menu extends React.Component {
           </div>
         </li>
         <li className="menu__item">
+          {/* handleLinkClick is a callback function to updates
+           the Sidebar state which closes the menu */}
           <Link
             to="/#contact-info"
             className="menu__link nav-link"
             onClick={this.props.handleLinkClick}
           >
             Contact
+            {/* handleLinkClick is a callback function to updates
+           the Sidebar state which closes the menu */}
           </Link>
           <div className="wave-container">
             <div className="wave"></div>
