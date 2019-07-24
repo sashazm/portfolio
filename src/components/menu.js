@@ -24,7 +24,12 @@ const Menu = () => (
       </div>
     </li>
     <li className="menu__item">
-      <a href={resume} className="menu__link nav-link">
+      <a
+        href={resume}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="menu__link nav-link"
+      >
         Resume
       </a>
       <div className="wave-container">
