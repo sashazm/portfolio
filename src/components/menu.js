@@ -43,7 +43,7 @@ const Menu = () => (
         Contact
       </a>
       <div className="wave-container">
-        <div className="wave test"></div>
+        <div className="wave"></div>
         <div className="wave wave--second"></div>
         <div className="wave wave--third"></div>
       </div>
